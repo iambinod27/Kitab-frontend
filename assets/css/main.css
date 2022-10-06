@@ -27,6 +27,10 @@ ul {
   padding: 0 !important;
 }
 
+.form-control {
+  padding: 0.625rem 0.725rem !important;
+}
+
 nav {
   background-color: #251f47;
   height: 110px;
@@ -54,7 +58,7 @@ nav {
 .nav__genres-links {
   width: 350px;
   height: 200px;
-  overflow: hidden;
+  overflow: scroll;
 }
 .nav__genres-links a {
   color: black;
@@ -96,4 +100,46 @@ footer {
 }
 .footer__links a:hover, .footer__icons a:hover {
   color: #ffffff;
+}
+
+.main__banner-container {
+  width: 100%;
+  height: 330px;
+}
+.main__banner-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main__banner-content {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  color: #ffffff;
+  height: 100%;
+  width: 100%;
+}
+.main__banner-input {
+  position: relative;
+}
+.main__banner-input-search {
+  background: none;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.main__banner-input-search i {
+  color: #6b6b6b !important;
+  cursor: pointer;
+}
+.main__overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  background: #000;
+  opacity: 0.62;
+  z-index: 1;
 }/*# sourceMappingURL=main.css.map */

@@ -32,7 +32,7 @@
         class="container d-flex align-items-center justify-content-between h-100 text-light"
       >
         <!-- logo and Genres -->
-        <div class="d-flex align-items-end gap-3">
+        <div class="d-flex align-items-end gap-4">
           <a href="index.html" class="nav__logo-container">
             <img src="/assets/images/Logo.png" alt="Logo" />
           </a>
@@ -137,10 +137,40 @@
     </nav>
     <!-- end of navbar -->
 
+    <!-- Main Banner -->
+    <main>
+      <div class="main__banner-container position-relative">
+        <img src="./assets/images/banner1.jpg" alt="logo" />
+        <div class="main__overlay"></div>
+        <div class="main__banner-content">
+          <div
+            class="container d-flex flex-column justify-content-center h-100"
+          >
+            <div class="main__banner-label w-50 mx-auto">
+              <h1 class="fw-bold">FIND YOUR BOOK AND PEACE OF MIND</h1>
+            </div>
+            <div class="main__banner-input w-50 mx-auto mt-2">
+              <form>
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Title, Author, Isbn ....."
+                />
+                <button class="main__banner-input-search" type="submit">
+                  <i class="bi bi-search text-dark"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End of Main Banner -->
+
     <!-- Footer -->
     <footer>
       <div class="container">
-        <div class="row">
+        <div class="row pt-5">
           <div class="col-lg-6 col-md-12 col-sm-12">
             <a href="index.html" class="footer__logo-container">
               <img src="/assets/images/Logo.png" alt="Logo" />
@@ -208,7 +238,7 @@
           </div>
           <div class="col-12 py-4">
             <div
-              class="d-flex align-items-center justify-content-between flex-column flex-md-row flex-lg-row"
+              class="d-flex align-items-center justify-content-between flex-column flex-md-row flex-lg-row border-top pt-3"
             >
               <p>&copy; Kitab Pustakalaya. All right reserved.</p>
               <p>Powered by Something Pvt. ltd</p>
