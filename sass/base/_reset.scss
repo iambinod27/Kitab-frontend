@@ -14,6 +14,11 @@ li {
   padding: 0;
 }
 
-p {
+p,
+h6 {
   margin: 0 !important;
+}
+
+input::placeholder {
+  font-family: "Lato", sans-serif;
 }

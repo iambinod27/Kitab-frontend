@@ -1,8 +1,9 @@
 // global
 @import "./base/reset";
 
-// Booststrap
+// vendors
 @import "./vendors/boostrap";
+@import "./vendors/slick";
 
 // layout
 @import "./layout/navbar";
