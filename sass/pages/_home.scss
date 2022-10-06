@@ -56,3 +56,24 @@
 .section {
   position: relative !important;
 }
+
+.carousel {
+  &__buttons {
+    display: flex;
+    position: relative;
+  }
+
+  &__btn-left {
+    position: absolute;
+    top: -225px;
+    left: -50px;
+    cursor: pointer;
+  }
+
+  &__btn-right {
+    position: absolute;
+    top: -225px;
+    right: -50px;
+    cursor: pointer;
+  }
+}
