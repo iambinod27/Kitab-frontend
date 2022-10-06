@@ -1,2 +1,16 @@
 // global
 @import "./base/reset";
+
+// vendors
+@import "./vendors/boostrap";
+@import "./vendors/slick";
+
+// layout
+@import "./layout/navbar";
+@import "./layout/footer";
+
+// Components
+@import "./components/card";
+
+// pages
+@import "./pages/home";
