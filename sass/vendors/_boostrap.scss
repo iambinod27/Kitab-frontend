@@ -1,0 +1,7 @@
+@use "../sass-utils/variables" as color;
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: color.$primary-white !important;
+  background: color.$primary-color !important;
+}

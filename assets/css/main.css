@@ -11,4 +11,54 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+p {
+  margin: 0 !important;
+}
+
+.dropdown-item:focus,
+.dropdown-item:hover {
+  color: #ffffff !important;
+  background: #251f47 !important;
+}
+
+nav {
+  background-color: #251f47;
+  height: 110px;
+}
+
+.nav__logo-container {
+  width: 200px;
+  height: 70px;
+}
+.nav__logo-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.nav__genres-dropdown a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+}
+.nav__genres-dropdown a:hover {
+  color: white;
+}
+.nav__genres-links {
+  width: 350px;
+  height: 200px;
+  overflow: hidden;
+}
+.nav__genres-links a {
+  color: black;
+  font-weight: 400;
+}
+.nav__login, .nav__cart {
+  color: #ffffff;
+  text-decoration: none;
+}
+.nav__login:hover, .nav__cart:hover {
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */

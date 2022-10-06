@@ -18,9 +18,124 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
+
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <!-- navbar -->
+    <nav>
+      <div
+        class="container d-flex align-items-center justify-content-between h-100 text-light"
+      >
+        <!-- logo and Genres -->
+        <div class="d-flex align-items-end gap-3">
+          <a href="index.html" class="nav__logo-container">
+            <img src="/assets/images/Logo.png" alt="Logo" />
+          </a>
+          <div class="dropdown nav__genres-dropdown mb-1">
+            <a
+              class=""
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Genres
+              <i class="bi bi-chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu nav__genres-links">
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Action & Adventure</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Bios & History</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Children’s</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Horror</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Fantasy</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Historical Fiction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Literacy Fiction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Mystery & Thriller</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Non-Fiction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Romance</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Science Fiction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Young Adult</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end of logo and Genres -->
+
+        <!-- login and cart -->
+        <div class="d-flex align-items-center gap-3">
+          <!-- login -->
+          <a href="./pages/login.html" class="nav__login">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-box-arrow-in-right fs-4"></i>
+              <p class="text-uppercase fw-semibold fs-6">login</p>
+            </div>
+          </a>
+
+          <!-- cart -->
+          <a href="./pages/cart.html" class="nav__cart">
+            <div class="d-flex align-items-center gap-1">
+              <i class="bi bi-cart3 fs-4"></i>
+              <p class="text-uppercase fw-semibold fs-6">cart</p>
+            </div>
+          </a>
+        </div>
+        <!-- end of login and cart -->
+      </div>
+    </nav>
+    <!-- end of navbar -->
     <!-- Global -->
     <!-- Bootstrap 5.2 -->
     <!-- JavaScript Bundle with Popper -->
