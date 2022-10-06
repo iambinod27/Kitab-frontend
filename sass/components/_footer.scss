@@ -28,6 +28,10 @@ footer {
     a {
       color: color.$primary-white;
       text-decoration: none;
+
+      &:hover {
+        color: color.$primary-white;
+      }
     }
   }
 }

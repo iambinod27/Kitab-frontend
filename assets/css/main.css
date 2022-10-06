@@ -93,4 +93,7 @@ footer {
 .footer__links a, .footer__icons a {
   color: #ffffff;
   text-decoration: none;
+}
+.footer__links a:hover, .footer__icons a:hover {
+  color: #ffffff;
 }/*# sourceMappingURL=main.css.map */
