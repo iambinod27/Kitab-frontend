@@ -4,9 +4,9 @@
 // Booststrap
 @import "./vendors/boostrap";
 
-// Components
-@import "./components/navbar";
-@import "./components/footer";
+// layout
+@import "./layout/navbar";
+@import "./layout/footer";
 
-// Layout
-@import "./layout/home";
+// pages
+@import "./pages/home";
