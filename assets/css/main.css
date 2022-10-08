@@ -119,10 +119,6 @@ footer {
   color: #ffffff;
 }
 
-.card {
-  width: 300px;
-  height: 300px;
-}
 .card__img-container {
   position: relative;
   width: 100%;
@@ -161,6 +157,7 @@ footer {
   -webkit-box-orient: vertical;
   overflow: hidden;
   font-size: 1.15rem;
+  min-height: 45px;
 }
 .card__content a h6:hover {
   text-decoration: underline;
@@ -234,6 +231,9 @@ footer {
 .section {
   position: relative !important;
 }
+.section__popular, .section__new-arrivals, .section__recommended {
+  margin: 4rem 0;
+}
 
 .carousel__buttons {
   display: flex;
@@ -250,4 +250,36 @@ footer {
   top: -225px;
   right: -50px;
   cursor: pointer;
+}
+
+.carousel-popular__buttons {
+  display: flex;
+  position: relative;
+}
+.carousel-popular__btn-left {
+  position: absolute;
+  top: -225px;
+  left: -50px;
+  cursor: pointer;
+}
+.carousel-popular__btn-right {
+  position: absolute;
+  top: -225px;
+  right: -50px;
+  cursor: pointer;
+}
+
+.new-arrivals__grid {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+}
+.new-arrivals__view-more {
+  color: #000;
+  text-decoration: none;
+}
+.new-arrivals__view-more:hover {
+  color: #000;
+  text-decoration: underline;
 }/*# sourceMappingURL=main.css.map */
