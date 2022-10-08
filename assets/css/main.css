@@ -231,6 +231,9 @@ footer {
 .section {
   position: relative !important;
 }
+.section__popular, .section__new-arrivals, .section__recommended {
+  margin: 4rem 0;
+}
 
 .carousel__buttons {
   display: flex;

@@ -55,6 +55,12 @@
 
 .section {
   position: relative !important;
+
+  &__popular,
+  &__new-arrivals,
+  &__recommended {
+    margin: 4rem 0;
+  }
 }
 
 .carousel {
