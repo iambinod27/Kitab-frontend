@@ -77,3 +77,22 @@
     cursor: pointer;
   }
 }
+
+.new-arrivals {
+  &__grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+  }
+
+  &__view-more {
+    color: #000;
+    text-decoration: none;
+
+    &:hover {
+      color: #000;
+      text-decoration: underline;
+    }
+  }
+}
