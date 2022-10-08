@@ -249,6 +249,23 @@ footer {
   cursor: pointer;
 }
 
+.carousel-popular__buttons {
+  display: flex;
+  position: relative;
+}
+.carousel-popular__btn-left {
+  position: absolute;
+  top: -225px;
+  left: -50px;
+  cursor: pointer;
+}
+.carousel-popular__btn-right {
+  position: absolute;
+  top: -225px;
+  right: -50px;
+  cursor: pointer;
+}
+
 .new-arrivals__grid {
   display: grid;
   align-items: center;
