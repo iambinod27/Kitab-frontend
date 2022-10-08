@@ -1,6 +1,5 @@
 // Home Recommended
 $(".recommended-carousel").slick({
-  dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 4,
@@ -18,7 +17,7 @@ $(".recommended-carousel").slick({
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 725,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
@@ -39,7 +38,6 @@ $(".recommended-carousel").slick({
 
 // Popular section
 $(".popular-carousel").slick({
-  dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 4,
@@ -57,7 +55,7 @@ $(".popular-carousel").slick({
       },
     },
     {
-      breakpoint: 600,
+      breakpoint: 725,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
