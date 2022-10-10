@@ -21,8 +21,25 @@
     width: 100%;
   }
 
+  &__banner-label {
+    width: 50%;
+
+    @media (max-width: 991px) {
+      width: 75% !important;
+
+      h1 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+
   &__banner-input {
     position: relative;
+    width: 50% !important;
+
+    @media (max-width: 991px) {
+      width: 75% !important;
+    }
 
     input {
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -67,6 +84,11 @@
   &__buttons {
     display: flex;
     position: relative;
+
+    @media (max-width: 675px) {
+      justify-content: center;
+      gap: 1rem;
+    }
   }
 
   &__btn-left {
@@ -74,6 +96,10 @@
     top: -225px;
     left: -50px;
     cursor: pointer;
+
+    @media (max-width: 675px) {
+      position: static;
+    }
   }
 
   &__btn-right {
@@ -81,6 +107,10 @@
     top: -225px;
     right: -50px;
     cursor: pointer;
+
+    @media (max-width: 675px) {
+      position: static;
+    }
   }
 }
 
@@ -88,6 +118,11 @@
   &__buttons {
     display: flex;
     position: relative;
+
+    @media (max-width: 675px) {
+      justify-content: center;
+      gap: 1rem;
+    }
   }
 
   &__btn-left {
@@ -95,6 +130,10 @@
     top: -225px;
     left: -50px;
     cursor: pointer;
+
+    @media (max-width: 675px) {
+      position: static;
+    }
   }
 
   &__btn-right {
@@ -102,6 +141,10 @@
     top: -225px;
     right: -50px;
     cursor: pointer;
+
+    @media (max-width: 675px) {
+      position: static;
+    }
   }
 }
 
