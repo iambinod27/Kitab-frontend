@@ -185,6 +185,15 @@ footer {
   bottom: -20px;
 }
 
+.global-btn {
+  background-color: #251f47;
+  color: #ffffff;
+  padding: 10px 50px;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
+
 .main__banner-container {
   width: 100%;
   height: 330px;
