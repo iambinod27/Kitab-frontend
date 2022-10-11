@@ -10,6 +10,10 @@
     width: 85%;
     height: 80px;
     margin-top: 1rem;
+
+    img {
+      object-fit: contain;
+    }
   }
 
   &__banner-img {
@@ -43,6 +47,10 @@
     &:hover {
       color: color.$text-color;
     }
+
+    @media (max-width: 767px) {
+      font-size: 0.875rem;
+    }
   }
 
   &__create {
@@ -51,6 +59,10 @@
 
     &:hover {
       color: color.$primary-color;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 0.875rem;
     }
   }
 }

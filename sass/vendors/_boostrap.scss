@@ -18,11 +18,25 @@ ul {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
   border: 1px solid #c6c6c6 !important;
   border-radius: 0.235rem !important;
+
+  @media (max-width: 767px) {
+    font-size: 0.875rem;
+  }
+}
+
+.form-control::placeholder {
+  @media (max-width: 767px) {
+    font-size: 0.875rem;
+  }
 }
 
 .form-label {
   color: color.$text-color;
   margin-bottom: 0.3rem !important;
+
+  @media (max-width: 767px) {
+    font-size: 0.875rem;
+  }
 }
 
 .form-check-input:checked {
@@ -32,4 +46,7 @@ ul {
 
 .form-check-label {
   color: color.$text-color;
+  @media (max-width: 767px) {
+    font-size: 0.875rem;
+  }
 }
