@@ -2,3 +2,9 @@ main {
   padding: 0;
   margin: 0;
 }
+
+.sign-up {
+  &__form-spacing {
+    justify-content: space-between;
+  }
+}
