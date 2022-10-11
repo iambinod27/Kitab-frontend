@@ -61,6 +61,10 @@ ul {
   border-color: #251f47 !important;
 }
 
+.form-check-label {
+  color: #686868;
+}
+
 .slick-slide {
   margin: 0 10px;
 }
@@ -383,6 +387,11 @@ footer {
   width: 100%;
   height: 100vh;
 }
+@media (max-width: 767px) {
+  .login__banner-img {
+    display: none;
+  }
+}
 .login__banner-img img {
   width: 100%;
   height: 100%;
@@ -394,6 +403,11 @@ footer {
 .login__head {
   font-size: 2.25rem !important;
   font-weight: 600 !important;
+}
+@media (max-width: 767px) {
+  .login__head {
+    font-size: 1.75rem !important;
+  }
 }
 .login__forgot {
   text-decoration: none;
