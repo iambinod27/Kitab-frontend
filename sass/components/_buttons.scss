@@ -1,0 +1,10 @@
+@use "../sass-utils/variables" as color;
+
+.global-btn {
+  background-color: color.$primary-color;
+  color: color.$primary-white;
+  padding: 10px 50px;
+  border: none;
+  font-weight: 600;
+  border-radius: 5px;
+}
