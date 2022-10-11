@@ -1,0 +1,76 @@
+@use "../sass-utils/variables" as color;
+
+.row {
+  --bs-gutter-x: 0rem !important;
+}
+
+.login {
+  &__logo-container {
+    display: block;
+    width: 85%;
+    height: 80px;
+    margin-top: 1rem;
+
+    img {
+      object-fit: contain;
+    }
+  }
+
+  &__banner-img {
+    width: 100%;
+    height: 100vh;
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 50% 70%;
+    }
+  }
+
+  &__head {
+    font-size: 2.25rem !important;
+    font-weight: 600 !important;
+
+    @media (max-width: 767px) {
+      font-size: 1.75rem !important;
+    }
+  }
+
+  &__forgot {
+    text-decoration: none;
+    color: color.$text-color;
+
+    &:hover {
+      color: color.$text-color;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 0.875rem;
+    }
+  }
+
+  &__create {
+    color: color.$primary-color;
+    text-decoration: none;
+
+    &:hover {
+      color: color.$primary-color;
+    }
+
+    @media (max-width: 767px) {
+      font-size: 0.875rem;
+    }
+  }
+}
+
+.form-check {
+  margin-bottom: 10px !important;
+}
+
+.global-btn {
+  margin: 8px 0 !important;
+}

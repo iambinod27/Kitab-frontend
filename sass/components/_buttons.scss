@@ -7,4 +7,8 @@
   border: none;
   font-weight: 600;
   border-radius: 5px;
+
+  @media (max-width: 767px) {
+    font-size: 0.875rem;
+  }
 }
