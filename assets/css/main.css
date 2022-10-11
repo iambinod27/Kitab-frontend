@@ -476,4 +476,43 @@ footer {
 
 .global-btn {
   margin: 8px 0 !important;
+}
+
+.figure {
+  width: -webkit-min-content !important;
+  width: -moz-min-content !important;
+  width: min-content !important;
+}
+
+.carousel-author__books__buttons {
+  display: flex;
+  position: relative;
+}
+@media (max-width: 675px) {
+  .carousel-author__books__buttons {
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+.carousel-author__books__btn-left {
+  position: absolute;
+  top: -225px;
+  left: -50px;
+  cursor: pointer;
+}
+@media (max-width: 675px) {
+  .carousel-author__books__btn-left {
+    position: static;
+  }
+}
+.carousel-author__books__btn-right {
+  position: absolute;
+  top: -225px;
+  right: -50px;
+  cursor: pointer;
+}
+@media (max-width: 675px) {
+  .carousel-author__books__btn-right {
+    position: static;
+  }
 }/*# sourceMappingURL=main.css.map */

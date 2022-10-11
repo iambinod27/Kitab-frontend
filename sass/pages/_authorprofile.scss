@@ -1,0 +1,36 @@
+.figure {
+  width: min-content !important;
+}
+.carousel-author__books {
+  &__buttons {
+    display: flex;
+    position: relative;
+
+    @media (max-width: 675px) {
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+
+  &__btn-left {
+    position: absolute;
+    top: -225px;
+    left: -50px;
+    cursor: pointer;
+
+    @media (max-width: 675px) {
+      position: static;
+    }
+  }
+
+  &__btn-right {
+    position: absolute;
+    top: -225px;
+    right: -50px;
+    cursor: pointer;
+
+    @media (max-width: 675px) {
+      position: static;
+    }
+  }
+}
