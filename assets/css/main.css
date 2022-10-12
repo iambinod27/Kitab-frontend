@@ -480,7 +480,7 @@ footer {
 
 .sign-up__width {
   width: 70%;
-  padding-top: 2rem !important;
+  padding-top: 1rem !important;
 }
 .sign-up__back {
   color: #686868;
@@ -488,4 +488,63 @@ footer {
 }
 .sign-up__back:hover {
   color: black;
+}
+
+.reset__banner-container {
+  width: 100%;
+  height: 230px;
+  position: relative;
+}
+@media (max-width: 767px) {
+  .reset__banner-container {
+    height: 120px;
+  }
+}
+.reset__banner-container .banner-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  z-index: 1;
+}
+.reset__logo {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  z-index: 2;
+  display: block;
+  width: 250px;
+  height: 97px;
+}
+@media (max-width: 425px) {
+  .reset__logo {
+    height: 50px;
+    width: 100px;
+  }
+}
+@media (max-width: 767px) {
+  .reset__logo {
+    width: 150px;
+    height: 75px;
+  }
+}
+.reset__logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.reset__undraw-container {
+  width: 350px;
+  height: 280px;
+}
+@media (max-width: 425px) {
+  .reset__undraw-container {
+    height: 150px;
+    width: 250px;
+  }
+}
+.reset__undraw-container img {
+  width: 100%;
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
