@@ -12,9 +12,11 @@
 // Components
 @import "./components/card";
 @import "./components/buttons";
+@import "./components/breadcrumb";
 
 // pages
 @import "./pages/home";
 @import "./pages/login";
 @import "./pages/sign-up";
 @import "./pages/reset-password";
+@import "./pages/authorprofile";

@@ -1,0 +1,8 @@
+@use "../sass-utils/variables" as symbol;
+
+.breadcrumb-item + .breadcrumb-item::before {
+  content: symbol.$breadcrumb-divider !important;
+}
+.breadcrumb {
+  margin-bottom: 2.8125rem !important;
+}
