@@ -479,6 +479,13 @@ footer {
 }
 
 .sign-up__width {
-  width: 65%;
+  width: 70%;
   padding-top: 2rem !important;
+}
+.sign-up__back {
+  color: #686868;
+  text-decoration: none;
+}
+.sign-up__back:hover {
+  color: black;
 }/*# sourceMappingURL=main.css.map */
