@@ -433,8 +433,8 @@ footer {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 50% 70%;
-     object-position: 50% 70%;
+  -o-object-position: 50% 50%;
+     object-position: 50% 50%;
 }
 .login__head {
   font-size: 2.25rem !important;
@@ -478,7 +478,14 @@ footer {
   margin: 8px 0 !important;
 }
 
-main {
-  padding: 0;
-  margin: 0;
+.sign-up__width {
+  width: 70%;
+  padding-top: 2rem !important;
+}
+.sign-up__back {
+  color: #686868;
+  text-decoration: none;
+}
+.sign-up__back:hover {
+  color: black;
 }/*# sourceMappingURL=main.css.map */

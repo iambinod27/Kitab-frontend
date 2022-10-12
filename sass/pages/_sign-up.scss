@@ -1,4 +1,17 @@
-main {
-  padding: 0;
-  margin: 0;
+@use "../sass-utils/variables" as color;
+.sign-up {
+  &__width {
+    width: 70%;
+
+    padding-top: 2rem !important;
+  }
+
+  &__back {
+    color: color.$text-color;
+    text-decoration: none;
+
+    &:hover {
+      color: black;
+    }
+  }
 }
