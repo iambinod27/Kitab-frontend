@@ -247,6 +247,14 @@ footer {
   }
 }
 
+.breadcrumb-item + .breadcrumb-item::before {
+  content: ">" !important;
+}
+
+.breadcrumb {
+  margin-bottom: 2.8125rem !important;
+}
+
 .main__banner-container {
   width: 100%;
   height: 330px;
@@ -482,6 +490,36 @@ footer {
   width: -webkit-min-content !important;
   width: -moz-min-content !important;
   width: min-content !important;
+}
+
+.author__profile {
+  border-color: #a7a1a1;
+  height: 40rem;
+}
+.author__follow-btn {
+  background: #5bb184 !important;
+}
+.author__follower {
+  color: #686868;
+}
+.author__follow-slogan {
+  color: #686868;
+}
+.author__main-dob {
+  color: #686868;
+}
+.author__main__genres {
+  color: #686868;
+  font-style: italic;
+}
+.author__biography {
+  padding-bottom: 2.5rem;
+  color: #686868;
+  font-style: italic;
+  border-color: #a7a1a1;
+}
+.author__books {
+  margin-block: 2.5rem;
 }
 
 .carousel-author__books__buttons {

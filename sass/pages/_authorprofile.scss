@@ -1,5 +1,41 @@
+@use "../sass-utils/variables" as color;
+
 .figure {
   width: min-content !important;
+}
+
+.author {
+  &__profile {
+    border-color: color.$profile-border-color;
+    height: 40rem;
+  }
+  &__follow-btn {
+    background: #5bb184 !important;
+  }
+  &__follower {
+    color: color.$text-color;
+  }
+  &__follow-slogan {
+    color: color.$text-color;
+  }
+  &__main {
+    &-dob {
+      color: color.$text-color;
+    }
+    &__genres {
+      color: color.$text-color;
+      font-style: italic;
+    }
+  }
+  &__biography {
+    padding-bottom: 2.5rem;
+    color: color.$text-color;
+    font-style: italic;
+    border-color: color.$profile-border-color;
+  }
+  &__books {
+    margin-block: 2.5rem;
+  }
 }
 .carousel-author__books {
   &__buttons {

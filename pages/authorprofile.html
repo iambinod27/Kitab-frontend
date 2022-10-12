@@ -154,33 +154,45 @@
     <main>
       <section>
         <div class="container py-5">
-          <div class="row d-flex">
-            <div class="col-2 pe-5 | d-flex flex-column border-end border-dark">
-              <figure class="figure w-auto d-flex flex-column">
+          <div class="row">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="">Author</a></li>
+              <li class="breadcrumb-item active">William Shakespeare</li>
+            </ol>
+          </div>
+          <div class="author row d-flex flex-row">
+            <div
+              class="author__profile col-3 pe-4 d-flex flex-column border-end border-2"
+            >
+              <figure class="figure w-auto d-flex flex-column gap-2">
                 <img
-                  class="figure-img"
+                  class="author__profile-pic figure-img w-md-75 align-self-center"
                   src="/assets/images/avatar5.jpg"
                   alt=""
                 />
-                <button class="btn">FOLLOW +</button>
-                <figcaption class="fig-caption">1.2K Followers</figcaption>
+                <button class="btn author__follow-btn text-light">
+                  FOLLOW +
+                </button>
+                <figcaption class="author__follower fig-caption mt-1">
+                  1.2K Followers
+                </figcaption>
               </figure>
-              <p>
+              <p class="author__follow-slogan">
                 Follow to get new releases updates and improved recommendation
               </p>
             </div>
-            <div class="col">
-              <div class="author-details | col-10 offset-1">
-                <header class="author__main-details">
-                  <div class="author__name-dob">
-                    <h1>Lional Andres Messi</h1>
-                    <h3>(1987 - present)</h3>
+            <div class="col-9">
+              <div class="author__details ms-5">
+                <header class="author__main">
+                  <div class="d-flex align-items-baseline gap-3 flex-wrap">
+                    <h1 class="author__main-name">Lional Andres Messi</h1>
+                    <h3 class="author__main-dob">(1987 - present)</h3>
                   </div>
-                  <p class="author__genres">
+                  <p class="author__main__genres mt-3 mb-4">
                     Genres: Romance, Sci-fi, Motivation
                   </p>
                 </header>
-                <p class="author__biography">
+                <p class="author__biography border-bottom col-11">
                   Lionel Andrés Messi[note 1] (Spanish pronunciation: [ljoˈnel
                   anˈdɾes ˈmesi] (listen); born 24 June 1987), also known as Leo
                   Messi, is an Argentine professional footballer who plays as a
@@ -202,9 +214,8 @@
                   scored over 780 senior career goals for club and country, and
                   has the most goals by a player for a single club.
                 </p>
-                <hr />
                 <!-- Authors Books Carousel -->
-                <div class="section__author__books">
+                <div class="author__books">
                   <div class="container my-4">
                     <div class="recommened__slider-show position-relative">
                       <div class="carousel-author__books">
@@ -336,33 +347,57 @@
         </div>
       </section>
       <!-- Similar Author Section -->
-      <section>
-        <div class="container py-5">
-          <h1 class="">Similar Genres Authors</h1>
+      <section class="similar-author">
+        <div class="container pb-5">
+          <h2 class="">Similar Genres Authors</h2>
           <div
             class="row d-flex flex-row gap-5 align-items-center justify-content-around py-5"
           >
-            <figure class="figure w-auto">
-              <img class="figure-img" src="/assets/images/avatar1.jpg" alt="" />
-              <figcaption class="figure-caption text-center">
+            <figure class="similar-author__profile figure w-auto">
+              <img
+                class="similar-author__profile-pic figure-img"
+                src="/assets/images/avatar1.jpg"
+                alt=""
+              />
+              <figcaption
+                class="similar-author__profile-name figure-caption text-center fs-6 pt-3"
+              >
                 Charles Bukwoski
               </figcaption>
             </figure>
-            <figure class="figure w-auto">
-              <img class="figure-img" src="/assets/images/avatar2.jpg" alt="" />
-              <figcaption class="figure-caption text-center">
+            <figure class="similar-author__profile figure w-auto">
+              <img
+                class="similar-author__profile-pic figure-img"
+                src="/assets/images/avatar2.jpg"
+                alt=""
+              />
+              <figcaption
+                class="similar-author__profile-name figure-caption text-center fs-6 pt-3"
+              >
                 Parijaat Waiba Tamang
               </figcaption>
             </figure>
-            <figure class="figure w-auto">
-              <img class="figure-img" src="/assets/images/avatar3.jpg" alt="" />
-              <figcaption class="figure-caption text-center">
+            <figure class="similar-author__profile figure w-auto">
+              <img
+                class="similar-author__profile-pic figure-img"
+                src="/assets/images/avatar3.jpg"
+                alt=""
+              />
+              <figcaption
+                class="similar-author__profile-name figure-caption text-center fs-6 pt-3"
+              >
                 Ishan Shrestha
               </figcaption>
             </figure>
-            <figure class="figure w-auto">
-              <img class="figure-img" src="/assets/images/avatar4.jpg" alt="" />
-              <figcaption class="figure-caption text-center">
+            <figure class="similar-author__profile figure w-auto">
+              <img
+                class="similar-author__profile-pic figure-img"
+                src="/assets/images/avatar4.jpg"
+                alt=""
+              />
+              <figcaption
+                class="similar-author__profile-name figure-caption text-center fs-6 pt-3"
+              >
                 Roshan Ghimire
               </figcaption>
             </figure>

@@ -78,14 +78,14 @@ $(".popular-carousel").slick({
 
 // Author Profile
 // Author Book section
-$(".author__books-carousel").slick({
+$(".carousel-author__books").slick({
   dots: false,
   infinite: true,
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
-  nextArrow: ".author__books-carousel__btn-left",
-  prevArrow: ".author__books-carousel__btn-right",
+  nextArrow: ".carousel-author__books__btn-left",
+  prevArrow: ".carousel-author__books__btn-right",
   responsive: [
     {
       breakpoint: 1024,
