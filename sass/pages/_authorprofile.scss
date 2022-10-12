@@ -5,9 +5,16 @@
 }
 
 .author {
+  &__profile-pic {
+    width: 176px;
+    height: 185px;
+    object-fit: cover;
+  }
+
   &__profile {
     border-color: color.$profile-border-color;
     height: 40rem;
+    top: 30px !important;
   }
   &__follow-btn {
     background: #5bb184 !important;

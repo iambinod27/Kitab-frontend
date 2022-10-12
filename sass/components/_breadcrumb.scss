@@ -6,3 +6,12 @@
 .breadcrumb {
   margin-bottom: 2.8125rem !important;
 }
+
+.breadcrumb-item a {
+  color: symbol.$text-color;
+  text-decoration: none;
+
+  &:hover {
+    color: symbol.$text-color;
+  }
+}
