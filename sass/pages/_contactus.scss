@@ -10,13 +10,15 @@
   }
 }
 
-.card {
-  background-color: hsl(0, 0%, 0%, 0.73) !important;
-  width: min(25rem, 100% - (1rem * 2));
-  @media (min-width: 768px) {
-    width: 100%;
-  }
-  @media (min-width: 992px) {
-    width: 75%;
+.contact-us {
+  .card {
+    background-color: hsl(0, 0%, 0%, 0.73) !important;
+    width: min(25rem, 100% - (1rem * 2));
+    @media (min-width: 768px) {
+      width: 100%;
+    }
+    @media (min-width: 992px) {
+      width: 75%;
+    }
   }
 }
