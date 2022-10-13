@@ -639,4 +639,33 @@ footer {
   .carousel-author__books__btn-right {
     position: static;
   }
+}
+
+.contact-us__width {
+  width: 90%;
+}
+@media (min-width: 768px) {
+  .contact-us__width {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .contact-us__width {
+    width: 70%;
+  }
+}
+
+.card {
+  background-color: hsla(0deg, 0%, 0%, 0.73) !important;
+  width: min(25rem, 100% - 2rem);
+}
+@media (min-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .card {
+    width: 75%;
+  }
 }/*# sourceMappingURL=main.css.map */
