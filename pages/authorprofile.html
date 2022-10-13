@@ -46,7 +46,7 @@
       >
         <!-- logo and Genres -->
         <div class="d-flex align-items-end gap-4">
-          <a href="/index.html" class="nav__logo-container">
+          <a href="index.html" class="nav__logo-container">
             <img src="/assets/images/Logo.png" alt="Logo" />
           </a>
           <div class="dropdown nav__genres-dropdown mb-1">
@@ -153,36 +153,38 @@
     <!-- Main Banner -->
     <main>
       <section>
-        <div class="container py-4">
+        <div class="container py-5 px-4 px-sm-0">
           <div class="row">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="#">Author</a></li>
+              <li class="breadcrumb-item"><a href="">Author</a></li>
               <li class="breadcrumb-item active">William Shakespeare</li>
             </ol>
           </div>
-          <div class="author row d-flex flex-row">
+          <div class="author row d-flex flex-column flex-md-row">
             <div
-              class="author__profile col-3 pe-4 d-flex flex-column border-end border-2 sticky-lg-top"
+              class="author__profile d-flex flex-column col-10 col-sm-8 col-md-3 pe-md-4"
             >
               <figure class="figure w-auto d-flex flex-column gap-2">
                 <img
-                  class="author__profile-pic figure-img w-md-75 align-self-center"
+                  class="author__profile-pic figure-img align-self-start align-self-md-center"
                   src="/assets/images/avatar5.jpg"
                   alt=""
                 />
                 <button class="btn author__follow-btn text-light">
                   FOLLOW +
                 </button>
-                <figcaption class="author__follower fig-caption mt-1">
+                <figcaption
+                  class="author__follower fig-caption mt-1 text-start"
+                >
                   1.2K Followers
                 </figcaption>
               </figure>
-              <p class="author__follow-slogan">
+              <p class="author__follow-slogan mb-4 me-sm-0">
                 Follow to get new releases updates and improved recommendation
               </p>
             </div>
-            <div class="col-9">
-              <div class="author__details ms-5">
+            <div class="col-md-9">
+              <div class="author__details mt-4 mt-md-0 ms-md-5">
                 <header class="author__main">
                   <div class="d-flex align-items-baseline gap-3 flex-wrap">
                     <h1 class="author__main-name">Lional Andres Messi</h1>
@@ -192,7 +194,7 @@
                     Genres: Romance, Sci-fi, Motivation
                   </p>
                 </header>
-                <p class="author__biography border-bottom col-11">
+                <p class="author__biography border-bottom col-md-12 col-lg-11">
                   Lionel Andrés Messi[note 1] (Spanish pronunciation: [ljoˈnel
                   anˈdɾes ˈmesi] (listen); born 24 June 1987), also known as Leo
                   Messi, is an Argentine professional footballer who plays as a
@@ -348,7 +350,7 @@
       </section>
       <!-- Similar Author Section -->
       <section class="similar-author">
-        <div class="container pb-5">
+        <div class="container pb-1">
           <h2 class="">Similar Genres Authors</h2>
           <div
             class="row d-flex flex-row gap-5 align-items-center justify-content-around py-5"
