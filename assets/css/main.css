@@ -654,7 +654,6 @@ footer {
     width: 70%;
   }
 }
-
 .contact-us .card {
   background-color: hsla(0deg, 0%, 0%, 0.73) !important;
   width: min(25rem, 100% - 2rem);
