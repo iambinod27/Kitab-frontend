@@ -1,0 +1,58 @@
+@use "../sass-utils/variables" as color;
+
+.profile {
+  &__unfollow-btn {
+    background-color: color.$primary-red;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+  }
+
+  &__following-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 140px;
+    width: 750px;
+  }
+
+  &__side-menu {
+    border-right: 1px solid #c4c4c4 !important;
+    padding: 15px 30px;
+  }
+
+  &__following-count {
+    font-size: 0.775rem;
+    color: color.$text-color;
+    font-weight: bold;
+  }
+
+  &__following-head {
+    border-bottom: 1px solid #c4c4c4;
+
+    h3 {
+      span {
+        color: color.$text-color;
+      }
+    }
+  }
+
+  &__sub-info {
+    color: color.$text-color;
+    font-size: 0.925rem;
+  }
+
+  &__img-container {
+    width: 178px;
+    height: 187px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 100%;
+    }
+  }
+}

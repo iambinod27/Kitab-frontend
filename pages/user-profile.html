@@ -150,6 +150,181 @@
     </nav>
     <!-- end of navbar -->
 
+    <!-- Profile -->
+    <main>
+      <div class="px-4">
+        <div class="d-flex align-items-start">
+          <div
+            class="nav flex-column nav-pills profile__side-menu"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <div class="border-bottom mb-2">
+              <div class="profile__img-container mb-2">
+                <img src="../assets/images/avatar6.jpg" alt="" />
+              </div>
+
+              <div class="profile__info">
+                <h4 class="fw-semibold">Binod Waiba Tamang</h4>
+                <div class="profile__sub-info mx-1 pb-2">
+                  <p><i class="bi bi-geo-alt"></i> Kathmandu, Nepal</p>
+                  <p><i class="bi bi-envelope"></i> binodtamang947@gmail.com</p>
+                  <p><i class="bi bi-person"></i> 21, Male</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="nav-link active"
+              id="v-pills-following-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-following"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-following"
+              aria-selected="true"
+            >
+              <i class="bi bi-people"></i> Following
+              <span class="profile__following-count">100</span>
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-orders-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-orders"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-orders"
+              aria-selected="false"
+            >
+              <i class="bi bi-box"></i> Your Orders
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-update-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-update"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-update"
+              aria-selected="false"
+            >
+              <i class="bi bi-info-circle"></i> Update Info
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-payment-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-payment"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-payment"
+              aria-selected="false"
+            >
+              <i class="bi bi-credit-card"></i> Payment Options
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-shipping-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-shipping"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-shipping"
+              aria-selected="false"
+            >
+              <i class="bi bi-geo-alt"></i> Your Shipping Address
+            </button>
+            <button
+              class="nav-link"
+              id="v-pills-wishlist-tab"
+              data-bs-toggle="pill"
+              data-bs-target="#v-pills-wishlist"
+              type="button"
+              role="tab"
+              aria-controls="v-pills-wishlist"
+              aria-selected="false"
+            >
+              <i class="bi bi-heart"></i> Wishlist
+            </button>
+          </div>
+          <div class="tab-content" id="v-pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="v-pills-following"
+              role="tabpanel"
+              aria-labelledby="v-pills-following-tab"
+            >
+              <section class="container p-3">
+                <div class="profile__following-head">
+                  <h3 class="text-uppercase fw-semibold">
+                    Following <span class="fs-6">100</span>
+                  </h3>
+                </div>
+
+                <!-- Following Card -->
+                <div class="profile__following-card">
+                  <div class="d-flex align-items-center gap-2">
+                    <div class="profile__following-img">
+                      <img src="../assets/images/avatar8.jpg" alt="#" />
+                    </div>
+                    <div>
+                      <h4 class="fw-semibold">Luiz Suarez</h4>
+                      <p>500 Followers</p>
+                    </div>
+                  </div>
+
+                  <button class="profile__unfollow-btn">Unfollow-</button>
+                </div>
+                <!-- End of Following Card -->
+              </section>
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-orders"
+              role="tabpanel"
+              aria-labelledby="v-pills-orders-tab"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-update"
+              role="tabpanel"
+              aria-labelledby="v-pills-update-tab"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-payment"
+              role="tabpanel"
+              aria-labelledby="v-pills-payment-tab"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-shipping"
+              role="tabpanel"
+              aria-labelledby="v-pills-shipping-tab"
+            >
+              ...
+            </div>
+            <div
+              class="tab-pane fade"
+              id="v-pills-wishlist"
+              role="tabpanel"
+              aria-labelledby="v-pills-wishlist-tab"
+            >
+              ...
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- end of Profile -->
+
     <!-- Footer -->
     <footer>
       <div class="container">
@@ -207,15 +382,15 @@
             <ul>
               <li class="footer__icons">
                 <img
-                  src="./assets/images/cash-on-delivery.png"
+                  src="/assets/images/cash-on-delivery.png"
                   alt="cash on delivery"
                 />
               </li>
               <li class="footer__icons">
-                <img src="./assets/images/visa.png" alt="visa" />
+                <img src="/assets/images/visa.png" alt="visa" />
               </li>
               <li class="footer__icons">
-                <img src="./assets/images/mastercard.png" alt="mastercard" />
+                <img src="/assets/images/mastercard.png" alt="mastercard" />
               </li>
             </ul>
           </div>
