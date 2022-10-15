@@ -248,23 +248,23 @@
               <i class="bi bi-heart"></i> Wishlist
             </button>
           </div>
-          <div class="tab-content" id="v-pills-tabContent">
+          <div class="tab-content container my-5 mx-4" id="v-pills-tabContent">
+            <!-- Following section -->
             <div
               class="tab-pane fade show active"
               id="v-pills-following"
               role="tabpanel"
               aria-labelledby="v-pills-following-tab"
             >
-              <section class="container p-3">
-                <div class="profile__following-head">
-                  <h3 class="text-uppercase fw-semibold">
-                    Following <span class="fs-6">100</span>
-                  </h3>
+              <section class="container p-3 col">
+                <div class="profile__following-head d-flex pb-4">
+                  <h3 class="text-uppercase mb-0">Following</h3>
+                  <p class="align-self-center ms-2 ms-md-3">100</p>
                 </div>
 
                 <!-- Following Card -->
-                <div class="profile__following-card">
-                  <div class="d-flex align-items-center gap-2">
+                <div class="profile__following-card col-11 mb-">
+                  <div class="d-flex align-items-center gap-4">
                     <div class="profile__following-img">
                       <img src="../assets/images/avatar8.jpg" alt="#" />
                     </div>
@@ -276,17 +276,242 @@
 
                   <button class="profile__unfollow-btn">Unfollow-</button>
                 </div>
-                <!-- End of Following Card -->
+
+                <div class="profile__following-card col-11">
+                  <div class="d-flex align-items-center gap-4">
+                    <div class="profile__following-img">
+                      <img src="../assets/images/avatar7.jpg" alt="#" />
+                    </div>
+                    <div>
+                      <h4 class="fw-semibold">Luiz Suarez</h4>
+                      <p>500 Followers</p>
+                    </div>
+                  </div>
+
+                  <button class="profile__unfollow-btn">Unfollow-</button>
+                </div>
+
+                <div class="profile__following-card col-11 mb-">
+                  <div class="d-flex align-items-center gap-4">
+                    <div class="profile__following-img">
+                      <img
+                        src="../assets/images/avatar5.jpg"
+                        alt="#"
+                        width="98px"
+                      />
+                    </div>
+                    <div>
+                      <h4 class="fw-semibold">Luiz Suarez</h4>
+                      <p>500 Followers</p>
+                    </div>
+                  </div>
+
+                  <button class="profile__unfollow-btn">Unfollow-</button>
+                </div>
               </section>
             </div>
+            <!-- End of Following section -->
+
+            <!-- Your orders Section -->
             <div
               class="tab-pane fade"
               id="v-pills-orders"
               role="tabpanel"
               aria-labelledby="v-pills-orders-tab"
             >
-              ...
+              <section class="container p-3 col">
+                <div class="profile__recentorders-head d-flex pb-4">
+                  <h3 class="mb-0">Recent Orders</h3>
+
+                  <!-- Nav Tabs toggler (Buttons) -->
+                  <ul
+                    class="nav nav-pills ms-auto"
+                    id="pills-tab"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="pills-all-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-all"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-all"
+                        aria-selected="true"
+                      >
+                        All
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-pending-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-pending"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-pending"
+                        aria-selected="false"
+                      >
+                        Pending
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-delivered-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-delivered"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-delivered"
+                        aria-selected="false"
+                      >
+                        Delivered
+                      </button>
+                    </li>
+                  </ul>
+                  <!-- End of Nav Tabs toggler (Buttons) -->
+                </div>
+
+                <!--Dyanamic Tab Content -->
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- All Tab Content -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-all"
+                    role="tabpanel"
+                    aria-labelledby="pills-all-tab"
+                  >
+                    <div class="profile__recentorders-card">
+                      <p class="profile__recentorders-card__id">
+                        Order ID : #A09ED12F
+                      </p>
+                      <div class="profile__recentorders-card__body">
+                        <img
+                          class="profile__recentorders-card__body-img"
+                          src="/assets/images/book5.jpg"
+                          alt="Messsi Book"
+                        />
+                        <div class="profile__recentorders-card__body-info">
+                          <h5
+                            class="profile__recentorders-card__body-info__head"
+                          >
+                            LIONAL MESSI - THE ULTIMATE FANBOOK
+                          </h5>
+                          <p
+                            class="profile__recentorders-card__body-info__address bi bi-geo-alt"
+                          >
+                            Shipping Address :
+                            <span
+                              >Baluwa, Suntakhan, Gokarneshwor-3 ,
+                              Kathmandu</span
+                            >
+                          </p>
+                          <p
+                            class="profile__recentorders-card__body-info__status"
+                          >
+                            Status :<span> Delivered</span>
+                          </p>
+                          <p
+                            class="profile__recentorders-card__body-info__delivered-date"
+                          >
+                            Delivered Date :<span> 25th Semptember 2022</span>
+                          </p>
+                          <p
+                            class="profile__recentorders-card__body-info__status-payment"
+                          >
+                            Payment :<span> Cash on Delivery</span>
+                          </p>
+                          <button
+                            class="profile__recentorders-card__body-info__cancel-button btn d-none"
+                          >
+                            Cancel Order
+                          </button>
+                        </div>
+                        <p class="profile__recentorders-card__body-price">
+                          NPR. 500.99
+                        </p>
+                      </div>
+                    </div>
+                    <div class="profile__recentorders-card">
+                      <p class="profile__recentorders-card__id">
+                        Order ID : #A09ED12F
+                      </p>
+                      <div class="profile__recentorders-card__body">
+                        <img
+                          class="profile__recentorders-card__body-img"
+                          src="/assets/images/book5.jpg"
+                          alt="Messsi Book"
+                        />
+                        <div class="profile__recentorders-card__body-info">
+                          <h5
+                            class="profile__recentorders-card__body-info__head"
+                          >
+                            LIONAL MESSI - THE ULTIMATE FANBOOK
+                          </h5>
+                          <p
+                            class="profile__recentorders-card__body-info__address bi bi-geo-alt"
+                          >
+                            Shipping Address :
+                            <span
+                              >Baluwa, Suntakhan, Gokarneshwor-3 ,
+                              Kathmandu</span
+                            >
+                          </p>
+                          <p
+                            class="profile__recentorders-card__body-info__status"
+                          >
+                            Status :<span> Delivered</span>
+                          </p>
+                          <p
+                            class="profile__recentorders-card__body-info__delivered-date"
+                          >
+                            Delivered Date :<span> 25th Semptember 2022</span>
+                          </p>
+                          <p
+                            class="profile__recentorders-card__body-info__status-payment"
+                          >
+                            Payment :<span> Cash on Delivery</span>
+                          </p>
+                          <button
+                            class="profile__recentorders-card__body-info__cancel-button btn d-none"
+                          >
+                            Cancel Order
+                          </button>
+                        </div>
+                        <p class="profile__recentorders-card__body-price">
+                          NPR. 500.99
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of All Tab Content -->
+
+                  <!-- Pending Tab Content -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-pending"
+                    role="tabpanel"
+                    aria-labelledby="pills-pending-tab"
+                  >
+                    ...gfsdg
+                  </div>
+                  <!-- End of Pending Tab Content -->
+                  <!-- Delivered Tab Content -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-delivered"
+                    role="tabpanel"
+                    aria-labelledby="pills-delivered-tab"
+                  ></div>
+                  <!-- End of Delivered Tab Content -->
+                </div>
+                <!--Dyanamic Tab Content -->
+              </section>
             </div>
+            <!-- End of your orders Section -->
             <div
               class="tab-pane fade"
               id="v-pills-update"
@@ -434,6 +659,6 @@
     ></script>
 
     <!-- Slick script -->
-    <script src="./assets/js/slickCarousel.js"></script>
+    <script src="/assets/js/slickCarousel.js"></script>
   </body>
 </html>

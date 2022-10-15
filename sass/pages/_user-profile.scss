@@ -1,6 +1,11 @@
 @use "../sass-utils/variables" as color;
 
+h3 {
+  font-family: "Rubik", sans-serif !important;
+  font-size: 2rem;
+}
 .profile {
+  // Following Tab
   &__unfollow-btn {
     background-color: color.$primary-red;
     border: none;
@@ -8,9 +13,11 @@
     padding: 10px 20px;
     border-radius: 5px;
     text-transform: uppercase;
+    margin-right: 1rem;
   }
 
   &__following-card {
+    border-bottom: 1px solid #c4c4c4;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,10 +38,8 @@
   &__following-head {
     border-bottom: 1px solid #c4c4c4;
 
-    h3 {
-      span {
-        color: color.$text-color;
-      }
+    p {
+      color: color.$text-color;
     }
   }
 
@@ -52,6 +57,62 @@
       height: 100%;
       object-fit: cover;
       border-radius: 100%;
+    }
+  }
+  // Your Orders Tab
+  &__recentorders-head {
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 1.5rem;
+  }
+
+  &__recentorders-card {
+    border: 1px solid color.$profile-border-color;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.75rem 1.75rem 1.75rem;
+    flex: 0 0 auto;
+    width: 95.66666667%;
+    border-radius: 5px;
+    box-shadow: 0 0.25em 0.5em color.$profile-border-color;
+
+    &__id {
+      margin-bottom: 0.5rem !important;
+    }
+
+    &__body {
+      display: flex;
+      gap: clamp(1.5rem, 1.75rem, 2rem);
+    }
+
+    &__body-img {
+      width: 106px;
+      height: 145px;
+    }
+
+    &__body-info {
+      width: min(66%, 66% - (2rem * 2));
+      color: color.$text-color;
+      font-size: 0.9rem;
+
+      &__head {
+        color: black !important;
+      }
+
+      &__cancel-button {
+        border: none;
+        background: transparent;
+        color: color.$primary-red !important;
+        text-align: start;
+        padding: 0 !important;
+      }
+      &__cancel-button:is(:hover, :active) {
+        border: none;
+        border-bottom: 1px solid !important;
+      }
+    }
+
+    &__body-price {
+      margin-left: auto !important;
+      color: color.$primary-red;
     }
   }
 }
