@@ -115,3 +115,16 @@ $(".carousel-author__books").slick({
     // instead of a settings object
   ],
 });
+
+// User Profile page
+let card = document.querySelectorAll(".profile__recentorders-card");
+let cardCancelButton = document.querySelectorAll(
+  ".profile__recentorders-card__body-info__cancel-button"
+);
+console.log(card);
+for (let i = 0; i < card.length; i++) {
+  card[i].addEventListener("click", (e) => {
+    console.log(cardCancelButton);
+    cardCancelButton[i].classList.toggle("d-none");
+  });
+}

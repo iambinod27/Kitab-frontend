@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@500&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -691,6 +692,11 @@ footer {
   }
 }
 
+h3 {
+  font-family: "Rubik", sans-serif !important;
+  font-size: 2rem;
+}
+
 .profile__unfollow-btn {
   background-color: #ff4848;
   border: none;
@@ -698,8 +704,10 @@ footer {
   padding: 10px 20px;
   border-radius: 5px;
   text-transform: uppercase;
+  margin-right: 1rem;
 }
 .profile__following-card {
+  border-bottom: 1px solid #c4c4c4;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -717,7 +725,7 @@ footer {
 .profile__following-head {
   border-bottom: 1px solid #c4c4c4;
 }
-.profile__following-head h3 span {
+.profile__following-head p {
   color: #686868;
 }
 .profile__sub-info {
@@ -734,4 +742,51 @@ footer {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 100%;
+}
+.profile__recentorders-head {
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 1.5rem;
+}
+.profile__recentorders-card {
+  border: 1px solid #a7a1a1;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.75rem 1.75rem 1.75rem;
+  flex: 0 0 auto;
+  width: 95.66666667%;
+  border-radius: 5px;
+  box-shadow: 0 0.25em 0.5em #a7a1a1;
+}
+.profile__recentorders-card__id {
+  margin-bottom: 0.5rem !important;
+}
+.profile__recentorders-card__body {
+  display: flex;
+  gap: 1.75rem;
+}
+.profile__recentorders-card__body-img {
+  width: 106px;
+  height: 145px;
+}
+.profile__recentorders-card__body-info {
+  width: min(66%, 66% - 4rem);
+  color: #686868;
+  font-size: 0.9rem;
+}
+.profile__recentorders-card__body-info__head {
+  color: black !important;
+}
+.profile__recentorders-card__body-info__cancel-button {
+  border: none;
+  background: transparent;
+  color: #ff4848 !important;
+  text-align: start;
+  padding: 0 !important;
+}
+.profile__recentorders-card__body-info__cancel-button:is(:hover, :active) {
+  border: none;
+  border-bottom: 1px solid !important;
+}
+.profile__recentorders-card__body-price {
+  margin-left: auto !important;
+  color: #ff4848;
 }/*# sourceMappingURL=main.css.map */
