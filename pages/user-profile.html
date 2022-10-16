@@ -152,7 +152,7 @@
 
     <!-- Profile -->
     <main>
-      <div class="px-4">
+      <div class="main-container px-4">
         <div class="d-flex align-items-start">
           <div
             class="nav flex-column nav-pills profile__side-menu"
@@ -326,7 +326,7 @@
                   <!-- Nav Tabs toggler (Buttons) -->
                   <ul
                     class="nav nav-pills ms-auto"
-                    id="pills-tab"
+                    id="pills-tab-recent-orders"
                     role="tablist"
                   >
                     <li class="nav-item" role="presentation">
@@ -437,7 +437,7 @@
                     </div>
                     <div class="profile__recentorders-card">
                       <p class="profile__recentorders-card__id">
-                        Order ID : #A09ED12F
+                        Order ID : #B23123D
                       </p>
                       <div class="profile__recentorders-card__body">
                         <img
@@ -463,12 +463,12 @@
                           <p
                             class="profile__recentorders-card__body-info__status"
                           >
-                            Status :<span> Delivered</span>
+                            Status :<span> Pending</span>
                           </p>
                           <p
                             class="profile__recentorders-card__body-info__delivered-date"
                           >
-                            Delivered Date :<span> 25th Semptember 2022</span>
+                            Delivered Date :<span> 30th Semptember 2022</span>
                           </p>
                           <p
                             class="profile__recentorders-card__body-info__status-payment"
@@ -482,7 +482,7 @@
                           </button>
                         </div>
                         <p class="profile__recentorders-card__body-price">
-                          NPR. 500.99
+                          NPR. 699.99
                         </p>
                       </div>
                     </div>
@@ -512,22 +512,333 @@
               </section>
             </div>
             <!-- End of your orders Section -->
+
+            <!-- Update Info Section -->
             <div
               class="tab-pane fade"
               id="v-pills-update"
               role="tabpanel"
               aria-labelledby="v-pills-update-tab"
             >
-              ...
+              <section class="container p-3 col">
+                <div class="profile__updateinfo-head d-flex pb-4">
+                  <h3 class="mb-0">Update Info</h3>
+
+                  <!-- Nav Tabs toggler (Buttons) -->
+                  <ul
+                    class="nav nav-pills ms-auto"
+                    id="pills-tab__update-info"
+                    role="tablist"
+                  >
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link active"
+                        id="pills-info-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-info"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-info"
+                        aria-selected="true"
+                      >
+                        Info
+                      </button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                      <button
+                        class="nav-link"
+                        id="pills-security-tab"
+                        data-bs-toggle="pill"
+                        data-bs-target="#pills-security"
+                        type="button"
+                        role="tab"
+                        aria-controls="pills-security"
+                        aria-selected="false"
+                      >
+                        Security
+                      </button>
+                    </li>
+                  </ul>
+                  <!-- End of Nav Tabs toggler (Buttons) -->
+                </div>
+
+                <!--Dyanamic Tab Content -->
+                <div class="tab-content" id="pills-tabContent">
+                  <!-- Info Tab Content -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-info"
+                    role="tabpanel"
+                    aria-labelledby="pills-info-tab"
+                  >
+                    <form action="">
+                      <!-- Info Unheaded sub-section-->
+                      <div class="row">
+                        <div class="col-lg-6 col-md-6 h-100">
+                          <div class="">
+                            <img
+                              src="/assets/icons/undraw3.svg"
+                              alt="Banner"
+                              class="img-fluid"
+                            />
+                          </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                          <div class="container">
+                            <div class="mb-3">
+                              <label
+                                for="update-info__first-name"
+                                class="form-label"
+                                >First name</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="update-info__first-name"
+                                value="Binod"
+                                placeholder="Enter your new first name"
+                              />
+                            </div>
+
+                            <div class="mb-3">
+                              <label
+                                for="update-info__last-name"
+                                class="form-label"
+                                >Last name</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="update-info__last-name"
+                                value="Waiba Tamang"
+                                placeholder="Enter your new last name"
+                              />
+                            </div>
+
+                            <div class="mb-3">
+                              <label
+                                for="update-info__gender"
+                                class="form-label"
+                                >Gender</label
+                              >
+                              <select
+                                name="gender"
+                                id="update-info__gender"
+                                class="form-select"
+                              >
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="none">
+                                  Don't want to classify
+                                </option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End of Info Unheaded sub-section-->
+
+                      <!-- Info User Credentials sub-section-->
+                      <div class="row mt-4">
+                        <div class="container">
+                          <div
+                            class="profile__usercredientials-head d-flex pb-4"
+                          >
+                            <h3 class="mb-0">User Credentials</h3>
+                          </div>
+                          <div class="col-12 col-lg-10">
+                            <div
+                              class="mb-3 d-flex gap-2 gap-xl-4 align-items-center flex-wrap"
+                            >
+                              <div class="col-12 col-xl-8">
+                                <label
+                                  for="user-credientials__email"
+                                  class="form-label"
+                                  >Email Address</label
+                                >
+                                <input
+                                  type="email"
+                                  class="form-control"
+                                  id="user-credientials__email"
+                                  placeholder="Enter your new email"
+                                  value="Binod@example.com"
+                                />
+                              </div>
+                              <button
+                                type="button"
+                                class="user-credientials__email__verify-btn global-btn"
+                              >
+                                Verify
+                              </button>
+                            </div>
+
+                            <div
+                              class="mb-3 d-flex gap-2 gap-xl-4 align-items-center flex-wrap"
+                            >
+                              <div class="col-12 col-xl-8">
+                                <label
+                                  for="user-credientials__number"
+                                  class="form-label"
+                                  >Phone Number</label
+                                >
+                                <input
+                                  type="tel"
+                                  class="form-control"
+                                  id="user-credientials__number"
+                                  placeholder="Enter your new phone number"
+                                  value="9849160601"
+                                  pattern="[0-9]{10}"
+                                />
+                              </div>
+                              <button
+                                type="button"
+                                class="user-credientials__number__verify-btn global-btn"
+                              >
+                                Verify
+                              </button>
+                            </div>
+
+                            <div class="mb-3 col-xl-8">
+                              <label
+                                for="exampleFormControlInput1"
+                                class="form-label"
+                                >Username</label
+                              >
+                              <input
+                                type="text"
+                                class="form-control"
+                                id="exampleFormControlInput1"
+                                placeholder="John123"
+                                value="iambinod27__"
+                              />
+                            </div>
+
+                            <div class="d-flex justify-content-start">
+                              <button
+                                type="submit"
+                                class="btn btn-danger pb-2 px-3"
+                              >
+                                Apply
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- End of Info User Credentials sub-section-->
+                    </form>
+                  </div>
+                  <!-- End of Info Tab Content -->
+
+                  <!-- Security Tab Content -->
+                  <div
+                    class="tab-pane fade"
+                    id="pills-security"
+                    role="tabpanel"
+                    aria-labelledby="pills-security-tab"
+                  >
+                    <!-- Password reset -->
+                    <div class="row">
+                      <div class="col-lg-6">
+                        <div class="container">
+                          <form>
+                            <div class="mb-3">
+                              <label
+                                for="update-info__security__current-password"
+                                class="form-label"
+                                >Current Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="update-info__security__current-password"
+                                placeholder="Enter current password"
+                              />
+                            </div>
+
+                            <div class="mb-3">
+                              <label
+                                for="update-info__security__new-password"
+                                class="form-label"
+                                >New Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="update-info__security__new-password"
+                                placeholder="Enter new password"
+                              />
+                            </div>
+
+                            <div class="mb-3">
+                              <label
+                                for="update-info__security__confirm-new-password"
+                                class="form-label"
+                                >Confirm New Password</label
+                              >
+                              <input
+                                type="password"
+                                class="form-control"
+                                id="update-info__security__confirm-new-password"
+                                placeholder="Confirm new password"
+                              />
+                            </div>
+
+                            <div class="d-flex justify-content-start">
+                              <button
+                                type="submit"
+                                class="btn btn-danger pb-2 px-3"
+                              >
+                                Apply
+                              </button>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                      <div class="col-lg-6 h-100 d-flex justify-content-center">
+                        <img
+                          src="/assets/icons/undraw2.svg"
+                          alt=""
+                          class="img-fluid ms-md-3 ms-lg-0"
+                        />
+                      </div>
+                    </div>
+                    <!-- Password reset -->
+                  </div>
+                  <!-- End of Security Tab Content -->
+                </div>
+                <!--Dyanamic Tab Content -->
+              </section>
             </div>
+            <!-- End of Update Info Section -->
+
+            <!-- Payment Section -->
             <div
               class="tab-pane fade"
               id="v-pills-payment"
               role="tabpanel"
               aria-labelledby="v-pills-payment-tab"
             >
-              ...
+              <section class="container p-3 col">
+                <div class="profile__payment-head d-flex pb-4">
+                  <h3 class="mb-0">Payment</h3>
+                </div>
+                <div
+                  class="profile__payment d-flex align-items-center flex-column"
+                >
+                  <img src="/assets/icons/undraw1.svg" alt="Opening soon" />
+                  <div class="d-flex align-items-center gap-3 px-5 mx-auto">
+                    <p class="bi bi-exclamation-triangle display-3"></p>
+                    <p class="fs-5">
+                      Note: This Tab will be working on Further Process of the
+                      Production.
+                    </p>
+                  </div>
+                </div>
+              </section>
             </div>
+            <!-- End of Payment Section -->
+
+            <!-- End of Shipping Section -->
             <div
               class="tab-pane fade"
               id="v-pills-shipping"
@@ -536,6 +847,9 @@
             >
               ...
             </div>
+            <!-- End of Shipping Section -->
+
+            <!-- Wishlist Section -->
             <div
               class="tab-pane fade"
               id="v-pills-wishlist"
@@ -544,6 +858,7 @@
             >
               ...
             </div>
+            <!-- End of Wishlist Section -->
           </div>
         </div>
       </div>

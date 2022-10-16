@@ -121,10 +121,12 @@ let card = document.querySelectorAll(".profile__recentorders-card");
 let cardCancelButton = document.querySelectorAll(
   ".profile__recentorders-card__body-info__cancel-button"
 );
-console.log(card);
+let statusDelivery = document.querySelectorAll(
+  ".profile__recentorders-card__body-info__status"
+);
+const a = "Delivered";
 for (let i = 0; i < card.length; i++) {
   card[i].addEventListener("click", (e) => {
-    console.log(cardCancelButton);
     cardCancelButton[i].classList.toggle("d-none");
   });
 }
