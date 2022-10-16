@@ -1,10 +1,56 @@
 @use "../sass-utils/variables" as color;
 
-h3 {
-  font-family: "Rubik", sans-serif !important;
-  font-size: 2rem;
+// main {
+//   .container {
+//     // Small devices (landscape phones, 576px and up)
+//     @media (min-width: 576px) {
+//       min-width: 565px !important;
+//     }
+
+//     // Medium devices (tablets, 768px and up)
+//     @media (min-width: 768px) {
+//       min-width: 750 !important;
+//     }
+
+//     // Large devices (desktops, 992px and up)
+//     @media (min-width: 992px) {
+//       min-width: 980 !important;
+//     }
+
+//     // X-Large devices (large desktops, 1200px and up)
+//     @media (min-width: 1200px) {
+//       min-width: 1990 !important;
+//     }
+
+//     // XX-Large devices (larger desktops, 1400px and up)
+//     @media (min-width: 1400px) {
+//       min-width: 1390 !important;
+//     }
+//   }
+// }
+.main-container {
+  width: min(1350px, 100% - (2rem * 2));
+  margin-inline: auto;
+  h3 {
+    font-family: "Rubik", sans-serif !important;
+    font-size: 2rem;
+  }
+  .form-select {
+    padding: 0.625rem 0.725rem !important;
+    background-color: #f6f6f6 !important;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+  }
 }
+
 .profile {
+  &__following-head,
+  &__recentorders-head,
+  &__updateinfo-head,
+  &__usercredientials-head,
+  &__payment-head {
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: 1.5rem;
+  }
   // Following Tab
   &__unfollow-btn {
     background-color: color.$primary-red;
@@ -36,8 +82,6 @@ h3 {
   }
 
   &__following-head {
-    border-bottom: 1px solid #c4c4c4;
-
     p {
       color: color.$text-color;
     }
@@ -60,9 +104,9 @@ h3 {
     }
   }
   // Your Orders Tab
-  &__recentorders-head {
-    border-bottom: 1px solid #c4c4c4;
-    margin-bottom: 1.5rem;
+
+  &__recentorders-card:is(:hover, :focus) {
+    scale: 1.01;
   }
 
   &__recentorders-card {
@@ -113,6 +157,27 @@ h3 {
     &__body-price {
       margin-left: auto !important;
       color: color.$primary-red;
+    }
+  }
+
+  // Payment Tab
+
+  &__payment {
+    color: color.$text-color;
+  }
+}
+
+// Update Info Tab
+.user-credientials {
+  &__email__verify-btn,
+  &__number__verify-btn {
+    margin-top: 1.9rem !important;
+    margin-bottom: 0 !important;
+  }
+  @media (max-width: 1200px) {
+    &__email__verify-btn,
+    &__number__verify-btn {
+      margin-top: 0.25rem !important;
     }
   }
 }

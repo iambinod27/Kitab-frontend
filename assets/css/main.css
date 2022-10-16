@@ -692,11 +692,24 @@ footer {
   }
 }
 
-h3 {
+.main-container {
+  width: min(1350px, 100% - 4rem);
+  margin-inline: auto;
+}
+.main-container h3 {
   font-family: "Rubik", sans-serif !important;
   font-size: 2rem;
 }
+.main-container .form-select {
+  padding: 0.625rem 0.725rem !important;
+  background-color: #f6f6f6 !important;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25) !important;
+}
 
+.profile__following-head, .profile__recentorders-head, .profile__updateinfo-head, .profile__usercredientials-head, .profile__payment-head {
+  border-bottom: 1px solid #c4c4c4;
+  margin-bottom: 1.5rem;
+}
 .profile__unfollow-btn {
   background-color: #ff4848;
   border: none;
@@ -722,9 +735,6 @@ h3 {
   color: #686868;
   font-weight: bold;
 }
-.profile__following-head {
-  border-bottom: 1px solid #c4c4c4;
-}
 .profile__following-head p {
   color: #686868;
 }
@@ -743,9 +753,8 @@ h3 {
      object-fit: cover;
   border-radius: 100%;
 }
-.profile__recentorders-head {
-  border-bottom: 1px solid #c4c4c4;
-  margin-bottom: 1.5rem;
+.profile__recentorders-card:is(:hover, :focus) {
+  scale: 1.01;
 }
 .profile__recentorders-card {
   border: 1px solid #a7a1a1;
@@ -789,4 +798,17 @@ h3 {
 .profile__recentorders-card__body-price {
   margin-left: auto !important;
   color: #ff4848;
+}
+.profile__payment {
+  color: #686868;
+}
+
+.user-credientials__email__verify-btn, .user-credientials__number__verify-btn {
+  margin-top: 1.9rem !important;
+  margin-bottom: 0 !important;
+}
+@media (max-width: 1200px) {
+  .user-credientials__email__verify-btn, .user-credientials__number__verify-btn {
+    margin-top: 0.25rem !important;
+  }
 }/*# sourceMappingURL=main.css.map */
