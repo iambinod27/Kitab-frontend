@@ -117,16 +117,35 @@ $(".carousel-author__books").slick({
 });
 
 // User Profile page
-let card = document.querySelectorAll(".profile__recentorders-card");
-let cardCancelButton = document.querySelectorAll(
+const card = document.querySelectorAll(".profile__recentorders-card");
+const cardCancelButton = document.querySelectorAll(
   ".profile__recentorders-card__body-info__cancel-button"
 );
-let statusDelivery = document.querySelectorAll(
+const statusDelivery = document.querySelectorAll(
   ".profile__recentorders-card__body-info__status"
 );
-const a = "Delivered";
+const heartCircle = document.querySelectorAll(".card__buttons");
+// Multi class toggler
+const toggleMultipleClasses = (element, ...classes) =>
+  classes.map((cl) => element.classList.toggle(cl));
+// Cancel button add on click
 for (let i = 0; i < card.length; i++) {
-  card[i].addEventListener("click", (e) => {
+  card[i].addEventListener("click", () => {
     cardCancelButton[i].classList.toggle("d-none");
+  });
+}
+
+for (let i = 0; i < heartCircle.length; i++) {
+  console.log(heartCircle);
+  heartCircle[i].addEventListener("click", (e) => {
+    console.log(heartCircle[i].firstElementChild.firstElementChild);
+    toggleMultipleClasses(
+      // Heart icon active and inactive
+      heartCircle[i].firstElementChild.firstElementChild,
+      "bi-heart-fill",
+      "text-danger",
+      "text-light",
+      "bi-heart"
+    );
   });
 }
