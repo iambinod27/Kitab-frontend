@@ -47,7 +47,9 @@
   &__recentorders-head,
   &__updateinfo-head,
   &__usercredientials-head,
-  &__payment-head {
+  &__payment-head,
+  &__shipping-head,
+  &__wishlist-head {
     border-bottom: 1px solid #c4c4c4;
     margin-bottom: 1.5rem;
   }
@@ -168,6 +170,11 @@
 }
 
 // Update Info Tab
+.update-info {
+  &__img {
+    height: 270px !important;
+  }
+}
 .user-credientials {
   &__email__verify-btn,
   &__number__verify-btn {
