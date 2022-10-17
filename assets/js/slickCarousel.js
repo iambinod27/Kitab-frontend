@@ -115,37 +115,3 @@ $(".carousel-author__books").slick({
     // instead of a settings object
   ],
 });
-
-// User Profile page
-const card = document.querySelectorAll(".profile__recentorders-card");
-const cardCancelButton = document.querySelectorAll(
-  ".profile__recentorders-card__body-info__cancel-button"
-);
-const statusDelivery = document.querySelectorAll(
-  ".profile__recentorders-card__body-info__status"
-);
-const heartCircle = document.querySelectorAll(".card__buttons");
-// Multi class toggler
-const toggleMultipleClasses = (element, ...classes) =>
-  classes.map((cl) => element.classList.toggle(cl));
-// Cancel button add on click
-for (let i = 0; i < card.length; i++) {
-  card[i].addEventListener("click", () => {
-    cardCancelButton[i].classList.toggle("d-none");
-  });
-}
-
-for (let i = 0; i < heartCircle.length; i++) {
-  console.log(heartCircle);
-  heartCircle[i].addEventListener("click", (e) => {
-    console.log(heartCircle[i].firstElementChild.firstElementChild);
-    toggleMultipleClasses(
-      // Heart icon active and inactive
-      heartCircle[i].firstElementChild.firstElementChild,
-      "bi-heart-fill",
-      "text-danger",
-      "text-light",
-      "bi-heart"
-    );
-  });
-}
