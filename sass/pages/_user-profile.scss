@@ -139,6 +139,45 @@
   &__payment {
     color: color.$text-color;
   }
+
+  // Your Shipping Address Tab
+  &__shipping-card:is(:hover, :focus) {
+    scale: 1.01;
+  }
+
+  &__shipping-card {
+    border: 1px solid color.$profile-border-color;
+    margin-bottom: 1.5rem;
+    padding: 1rem 1.75rem 1.75rem 1.75rem;
+    flex: 0 0 auto;
+    margin-inline-end: calc(100% - 95.66666667%);
+    border-radius: 5px;
+    box-shadow: 0 0.25em 0.5em color.$profile-border-color;
+    align-items: flex-start;
+
+    &__body {
+      color: color.$text-color;
+      font-size: 0.9rem;
+
+      &__head {
+        color: black !important;
+      }
+    }
+
+    &__edit-btn {
+      background-color: transparent;
+      color: color.$text-color;
+      border: none;
+    }
+    &__edit-btn:is(:hover, :focus) {
+      color: black;
+    }
+  }
+
+  &__shipping__add-address-btn {
+    padding: 10px 12px;
+    margin-right: calc(100% - 95.66666667%) !important;
+  }
 }
 
 // Update Info Tab
@@ -167,6 +206,25 @@
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
     gap: 1.5rem;
-    // width: fit-content;
+  }
+}
+
+// Add address Modal
+.add-address {
+  &__btn {
+    &-save {
+      padding: 0.5rem 3rem;
+      border: none;
+      color: color.$primary-white;
+      background-color: color.$primary-color;
+    }
+    &-save:is(:focus, :hover) {
+      background-color: color.$primary-color-light;
+    }
+    &-cancel {
+      padding: 0.5rem 3rem;
+      border: none;
+      color: black;
+    }
   }
 }
