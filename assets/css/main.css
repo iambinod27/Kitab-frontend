@@ -815,6 +815,39 @@ footer {
 .profile__payment {
   color: #686868;
 }
+.profile__shipping-card:is(:hover, :focus) {
+  scale: 1.01;
+}
+.profile__shipping-card {
+  border: 1px solid #a7a1a1;
+  margin-bottom: 1.5rem;
+  padding: 1rem 1.75rem 1.75rem 1.75rem;
+  flex: 0 0 auto;
+  -webkit-margin-end: 4.33333333%;
+          margin-inline-end: 4.33333333%;
+  border-radius: 5px;
+  box-shadow: 0 0.25em 0.5em #a7a1a1;
+  align-items: flex-start;
+}
+.profile__shipping-card__body {
+  color: #686868;
+  font-size: 0.9rem;
+}
+.profile__shipping-card__body__head {
+  color: black !important;
+}
+.profile__shipping-card__edit-btn {
+  background-color: transparent;
+  color: #686868;
+  border: none;
+}
+.profile__shipping-card__edit-btn:is(:hover, :focus) {
+  color: black;
+}
+.profile__shipping__add-address-btn {
+  padding: 10px 12px;
+  margin-right: 4.33333333% !important;
+}
 
 .update-info__img {
   height: 270px !important;
@@ -834,6 +867,21 @@ footer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
   gap: 1.5rem;
+}
+
+.add-address__btn-save {
+  padding: 0.5rem 3rem;
+  border: none;
+  color: #ffffff;
+  background-color: #251f47;
+}
+.add-address__btn-save:is(:focus, :hover) {
+  background-color: rgba(37, 31, 71, 0.862745098);
+}
+.add-address__btn-cancel {
+  padding: 0.5rem 3rem;
+  border: none;
+  color: black;
 }
 
 .cart__less, .cart__more {
