@@ -690,6 +690,7 @@
                                   pattern="[0-9]{10}"
                                 />
                               </div>
+
                               <button
                                 type="button"
                                 class="user-credientials__number__verify-btn global-btn"
@@ -838,7 +839,7 @@
             </div>
             <!-- End of Payment Section -->
 
-            <!-- End of Shipping Section -->
+            <!-- Shipping Section -->
             <div
               class="tab-pane fade"
               id="v-pills-shipping"
@@ -852,102 +853,227 @@
 
                 <div class="tab-content" id="pills-tabContent">
                   <!-- User Address Content -->
-                  <div class="profile__recentorders-card">
-                    <div class="profile__recentorders-card__body">
-                      <img
-                        class="profile__recentorders-card__body-img"
-                        src="/assets/images/book5.jpg"
-                        alt="Messsi Book"
-                      />
-                      <div class="profile__recentorders-card__body-info">
-                        <h5 class="profile__recentorders-card__body-info__head">
-                          LIONAL MESSI - THE ULTIMATE FANBOOK
-                        </h5>
-                        <p
-                          class="profile__recentorders-card__body-info__address bi bi-geo-alt"
+                  <div class="profile__recentorders-card d-flex">
+                    <div class="profile__recentorders-card__body-info">
+                      <h6 class="profile__recentorders-card__body-info__head">
+                        Binod Waiba Tamang
+                      </h6>
+                      <p
+                        class="profile__recentorders-card__body-info__address bi bi-geo-alt"
+                      >
+                        Address :
+                        <span>Kathmandu, Nepal</span>
+                      </p>
+                      <p class="profile__recentorders-card__body-info__status">
+                        Region :
+                        <span>
+                          Bagmati Province - Kathmandu Outside Ring Road -
+                          Boudha Area</span
                         >
-                          Shipping Address :
-                          <span
-                            >Baluwa, Suntakhan, Gokarneshwor-3 , Kathmandu</span
-                          >
-                        </p>
-                        <p
-                          class="profile__recentorders-card__body-info__status"
-                        >
-                          Status :<span> Delivered</span>
-                        </p>
-                        <p
-                          class="profile__recentorders-card__body-info__delivered-date"
-                        >
-                          Delivered Date :<span> 25th Semptember 2022</span>
-                        </p>
-                        <p
-                          class="profile__recentorders-card__body-info__status-payment"
-                        >
-                          Payment :<span> Cash on Delivery</span>
-                        </p>
-                        <button
-                          class="profile__recentorders-card__body-info__cancel-button btn d-none"
-                        >
-                          Cancel Order
-                        </button>
-                      </div>
-                      <p class="profile__recentorders-card__body-price">
-                        NPR. 500.99
+                      </p>
+                      <p
+                        class="profile__recentorders-card__body-info__delivered-date"
+                      >
+                        Phone Number : <span> 9849160601</span>
                       </p>
                     </div>
+                    <button
+                      class="profile__recentorders-card__body-price bi bi-pencil-square"
+                    >
+                      Edit
+                    </button>
                   </div>
+                  <div class="d-flex justify-content-end">
+                    <!-- Button trigger modal -->
+                    <button
+                      type="button"
+                      class="global-btn"
+                      data-bs-toggle="modal"
+                      data-bs-target="#exampleModal"
+                    >
+                      + ADD NEW ADDRESS
+                    </button>
+                    <!-- Modal -->
+                    <div
+                      class="modal fade"
+                      id="exampleModal"
+                      tabindex="-1"
+                      aria-labelledby="exampleModalLabel"
+                      aria-hidden="true"
+                    >
+                      <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <h5
+                              class="modal-title fw-bold"
+                              id="exampleModalLabel"
+                            >
+                              Add New Address
+                            </h5>
+                            <button
+                              type="button"
+                              class="btn-close"
+                              data-bs-dismiss="modal"
+                              aria-label="Close"
+                            ></button>
+                          </div>
+                          <!-- Add Address Modal Body -->
+                          <div class="modal-body">
+                            <div class="container">
+                              <div class="row d-flex gap-md-3 gap-lg-4">
+                                <div class="col">
+                                  <div class="mb-3">
+                                    <label
+                                      for="update-info__first-name"
+                                      class="form-label"
+                                      >Full Name</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="update-info__first-name"
+                                      placeholder="Enter your new full name"
+                                    />
+                                  </div>
 
-                  <div class="profile__recentorders-card">
-                    <p class="profile__recentorders-card__id">
-                      Order ID : #B23123D
-                    </p>
-                    <div class="profile__recentorders-card__body">
-                      <img
-                        class="profile__recentorders-card__body-img"
-                        src="/assets/images/book5.jpg"
-                        alt="Messsi Book"
-                      />
-                      <div class="profile__recentorders-card__body-info">
-                        <h5 class="profile__recentorders-card__body-info__head">
-                          LIONAL MESSI - THE ULTIMATE FANBOOK
-                        </h5>
-                        <p
-                          class="profile__recentorders-card__body-info__address bi bi-geo-alt"
-                        >
-                          Shipping Address :
-                          <span
-                            >Baluwa, Suntakhan, Gokarneshwor-3 , Kathmandu</span
-                          >
-                        </p>
-                        <p
-                          class="profile__recentorders-card__body-info__status"
-                        >
-                          Status :<span> Pending</span>
-                        </p>
-                        <p
-                          class="profile__recentorders-card__body-info__delivered-date"
-                        >
-                          Delivered Date :<span> 30th Semptember 2022</span>
-                        </p>
-                        <p
-                          class="profile__recentorders-card__body-info__status-payment"
-                        >
-                          Payment :<span> Cash on Delivery</span>
-                        </p>
-                        <button
-                          class="profile__recentorders-card__body-info__cancel-button btn d-none"
-                        >
-                          Cancel Order
-                        </button>
+                                  <div class="mb-3">
+                                    <label
+                                      for="user-credientials__number"
+                                      class="form-label"
+                                      >Phone Number</label
+                                    >
+                                    <input
+                                      type="tel"
+                                      class="form-control"
+                                      id="user-credientials__number"
+                                      placeholder="Please enter your Number"
+                                      pattern="[0-9]{10}"
+                                    />
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label
+                                      for="update-info__last-name"
+                                      class="form-label"
+                                      >Building / House No / Floor /
+                                      Street</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="update-info__last-name"
+                                      placeholder="Please enter"
+                                    />
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label
+                                      for="update-info__last-name"
+                                      class="form-label"
+                                      >Colony / Suburb / Locality /
+                                      Landmark</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="update-info__last-name"
+                                      placeholder="Please enter"
+                                    />
+                                  </div>
+                                </div>
+                                <div class="col">
+                                  <div class="mb-3">
+                                    <label
+                                      for="update-info__gender"
+                                      class="form-label"
+                                      >Region</label
+                                    >
+                                    <select
+                                      name="gender"
+                                      id="update-info__gender"
+                                      class="form-select"
+                                    >
+                                      <option value="male">Male</option>
+                                      <option value="female">Female</option>
+                                      <option value="none">
+                                        Don't want to classify
+                                      </option>
+                                    </select>
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label
+                                      for="update-info__gender"
+                                      class="form-label"
+                                      >City</label
+                                    >
+                                    <select
+                                      name="gender"
+                                      id="update-info__gender"
+                                      class="form-select"
+                                    >
+                                      <option value="male">Male</option>
+                                      <option value="female">Female</option>
+                                      <option value="none">
+                                        Don't want to classify
+                                      </option>
+                                    </select>
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label
+                                      for="update-info__gender"
+                                      class="form-label"
+                                      >Area</label
+                                    >
+                                    <select
+                                      name="gender"
+                                      id="update-info__gender"
+                                      class="form-select"
+                                    >
+                                      <option value="male">Male</option>
+                                      <option value="female">Female</option>
+                                      <option value="none">
+                                        Don't want to classify
+                                      </option>
+                                    </select>
+                                  </div>
+
+                                  <div class="mb-3">
+                                    <label
+                                      for="update-info__first-name"
+                                      class="form-label"
+                                      >Address</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="update-info__first-name"
+                                      placeholder="For example : House#, Street123, ABC Road"
+                                    />
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <!--End of Add Address Modal Body  -->
+                          <div class="modal-footer">
+                            <button
+                              type="button"
+                              class="btn btn-secondary"
+                              data-bs-dismiss="modal"
+                            >
+                              Cancel
+                            </button>
+                            <button type="button" class="global-btn">
+                              Save changes
+                            </button>
+                          </div>
+                        </div>
                       </div>
-                      <p class="profile__recentorders-card__body-price">
-                        NPR. 699.99
-                      </p>
                     </div>
                   </div>
                 </div>
-
                 <!-- End of User Address Content -->
               </section>
             </div>
@@ -960,7 +1086,56 @@
               role="tabpanel"
               aria-labelledby="v-pills-wishlist-tab"
             >
-              ...
+              <section class="container p-3 col-12">
+                <div class="profile__wishlist-head d-flex pb-4">
+                  <h3 class="mb-0">Wishlist</h3>
+                </div>
+                <div class="wishlist__grid col-md-8 col-lg-12">
+                  <div class="card">
+                    <a class="card__img-container" href="/pages/details.html">
+                      <img src="/assets/images/book5.jpg" alt="Book1" />
+                    </a>
+                    <div class="card__buttons">
+                      <div class="card__circle">
+                        <i class="bi bi-heart-fill fs-4 text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="card__content">
+                      <a href="/pages/details.html">
+                        <h6 class="fw-semibold">
+                          LIONAL MESSI - THE ULTIMATE FANBOOK
+                        </h6>
+                      </a>
+                      <span class="card__price"
+                        ><p>NPR.760</p>
+                        NPR.500</span
+                      >
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <a class="card__img-container" href="/pages/details.html">
+                      <img src="/assets/images/book4.jpg" alt="Book1" />
+                    </a>
+                    <div class="card__buttons">
+                      <div class="card__circle">
+                        <i class="bi bi-heart-fill fs-4 text-danger"></i>
+                      </div>
+                    </div>
+                    <div class="card__content">
+                      <a href="/pages/details.html">
+                        <h6 class="fw-semibold">
+                          It Ends with Us by Colleen Hoover
+                        </h6>
+                      </a>
+                      <span class="card__price"
+                        ><p>NPR.760</p>
+                        NPR.500</span
+                      >
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
             <!-- End of Wishlist Section -->
           </div>
