@@ -165,9 +165,44 @@
           </div>
         </div>
         <div class="row">
-          <div class="col"></div>
+          <!-- Product Pictures -->
+          <div class="col container mx-4 px-5 d-flex flex-column gap-4">
+            <!-- Magnify on hover  -->
+            <div class="magnifier-thumb-wrapper position-relative">
+              <img
+                id="thumb"
+                class="product-details__img__main row"
+                src="/assets/images/book4large1.jpg"
+                alt="IT ENDS WITH US "
+              />
+              <div
+                class="magnifier-preview"
+                id="preview"
+                style="width: 300px; height: 300px"
+              ></div>
+            </div>
+            <!-- End of Magnify on hover -->
+            <div class="product-details__img__others row gap-lg-5">
+              <img
+                class="product-details__img col img-active"
+                src="/assets/images/book4.jpg"
+                alt="IT ENDS WITH US "
+              />
+              <img
+                class="product-details__img col"
+                src="/assets/images/book3.jpg"
+                alt="IT ENDS WITH US "
+              />
+              <img
+                class="product-details__img col"
+                src="/assets/images/book4.jpg"
+                alt="IT ENDS WITH US "
+              />
+            </div>
+          </div>
+          <!-- End of Product Pictures -->
           <!-- Product Details -->
-          <div class="product-details col">
+          <article class="product-details col">
             <header class="product-details__head">
               <h1 class="text-uppercase">IT ENDS WITH US</h1>
               <p>Author: Collen Hoover , Genres : Romance</p>
@@ -322,6 +357,7 @@
                       name="quantity"
                       id="quantity-no"
                       min="1"
+                      value="1"
                     />
                     <button id="quantity-no-add">
                       <i class="bi bi-plus-lg"></i>
@@ -342,8 +378,20 @@
                 </div>
               </div>
               <!-- End of Product Stock and Cart-->
+              <div
+                class="product-details__social d-flex align-items-center gap-2"
+              >
+                <p>Share with:</p>
+                <a href="#" class="product-details__social-link"
+                  ><i class="bi bi-facebook"></i></a
+                ><a href="#" class="product-details__social-link"
+                  ><i class="bi bi-instagram"></i></a
+                ><a href="#" class="product-details__social-link"
+                  ><i class="bi bi-twitter"></i
+                ></a>
+              </div>
             </div>
-          </div>
+          </article>
         </div>
       </section>
     </main>
@@ -432,7 +480,7 @@
     <!-- End of Footer -->
 
     <!-- Global -->
-    <!-- Jquery -->
+
     <!-- Jquery -->
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
@@ -454,5 +502,24 @@
 
     <!-- Quantity script -->
     <script src="/assets/js/quantity.js"></script>
+
+    <!-- Product Image script-->
+    <script src="/assets/js/productImage.js"></script>
+
+    <!-- Image Magnifier -->
+    <script src="/assets/js/imageMagnifier/Event.js"></script>
+    <script src="/assets/js/imageMagnifier/Magnifier.js"></script>
+    <script type="text/javascript">
+      var evt = new Event(),
+        m = new Magnifier(evt);
+
+      m.attach({
+        thumb: "#thumb",
+        large: "/assets/images/book4large.jpg",
+        largeWrapper: "preview",
+        zoom: 2,
+        zoomable: true,
+      });
+    </script>
   </body>
 </html>

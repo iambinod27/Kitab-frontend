@@ -11,6 +11,7 @@
 @import "./layout/footer";
 
 // Components
+@import "./components/image-magnifier";
 @import "./components/card";
 @import "./components/buttons";
 @import "./components/breadcrumb";
@@ -27,4 +28,4 @@
 @import "./pages/user-profile";
 @import "./pages/cart";
 @import "./pages/category-listing";
-@import "./pages/product-details";
+@import "./pages/details";

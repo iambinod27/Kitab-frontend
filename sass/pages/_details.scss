@@ -29,6 +29,29 @@
 }
 
 .product-details {
+  &__img {
+    &__main {
+      // width: clamp(450px, 475px, 491px);
+      width: 100%;
+      aspect-ratio: 1;
+    }
+    &__others {
+      .img-active {
+        border-color: $dark !important;
+      }
+
+      & * {
+        width: 140px;
+        aspect-ratio: 1;
+        border: 4px solid $text-color;
+
+        &:is(:focus, :hover) {
+          border-color: $dark;
+        }
+      }
+    }
+  }
+
   &__btn {
     &__buy-now {
       padding: 0.5em 3em;
@@ -49,6 +72,18 @@
 
       &:is(:focus, :hover) {
         background-color: $primary-red-light;
+      }
+    }
+  }
+
+  &__social {
+    color: $text-color;
+    &-link {
+      font-size: 1.5rem;
+      color: $dark;
+
+      &:is(:hover, :focus) {
+        color: $text-color;
       }
     }
   }

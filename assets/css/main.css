@@ -215,6 +215,73 @@ footer {
   color: #ffffff;
 }
 
+.magnifier-thumb-wrapper {
+  position: relative;
+  display: block;
+  top: 0;
+  left: 0;
+}
+
+.magnifier-lens {
+  position: absolute;
+  border: solid 1px #ccc;
+  z-index: 1000;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.magnifier-loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: solid 1px #ccc;
+  color: #fff;
+  text-align: center;
+  background: transparent;
+  background: rgba(50, 50, 50, 0.5);
+  z-index: 1000;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F323232,endColorstr=#7F323232)";
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F323232,endColorstr=#7F323232);
+}
+
+.magnifier-loader-text {
+  font: 13px Arial;
+  margin-top: 10px;
+}
+
+.magnifier-large {
+  position: absolute;
+  z-index: 100;
+}
+
+.magnifier-preview {
+  padding: 0;
+  width: 100%;
+  height: 150px;
+  position: absolute;
+  z-index: 999;
+  overflow: hidden;
+  left: 40rem;
+  top: 0;
+}
+
+.magnifier-preview img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.opaque {
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+}
+
+.hidden {
+  display: none;
+}
+
 .card__img-container {
   position: relative;
   width: 100%;
@@ -1115,6 +1182,21 @@ footer {
   scale: 1.5;
 }
 
+.product-details__img__main {
+  width: 100%;
+  aspect-ratio: 1;
+}
+.product-details__img__others .img-active {
+  border-color: #000000 !important;
+}
+.product-details__img__others * {
+  width: 140px;
+  aspect-ratio: 1;
+  border: 4px solid #686868;
+}
+.product-details__img__others *:is(:focus, :hover) {
+  border-color: #000000;
+}
 .product-details__btn__buy-now {
   padding: 0.5em 3em;
   border: none;
@@ -1132,4 +1214,14 @@ footer {
 }
 .product-details__btn__add-to-cart:is(:focus, :hover) {
   background-color: rgba(255, 72, 72, 0.6980392157);
+}
+.product-details__social {
+  color: #686868;
+}
+.product-details__social-link {
+  font-size: 1.5rem;
+  color: #000000;
+}
+.product-details__social-link:is(:hover, :focus) {
+  color: #686868;
 }/*# sourceMappingURL=main.css.map */
