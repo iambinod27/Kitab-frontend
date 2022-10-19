@@ -1,0 +1,18 @@
+@use "../sass-utils/variables" as color;
+.pagination {
+  --bs-pagination-border-width: 0 !important;
+  --bs-pagination-border-color: none !important;
+  ---bs-pagination-active-bg: color.$primary-color !important;
+  --bs-pagination-active-border-color: color.$primary-color !important;
+}
+
+.active > .page-link,
+.page-link.active {
+  background-color: color.$primary-color !important;
+  color: white !important;
+  border-radius: 5px !important;
+}
+
+.page-link {
+  color: color.$primary-color !important;
+}

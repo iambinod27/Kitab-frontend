@@ -31,10 +31,18 @@
     background: color.$primary-color !important;
     color: white !important;
   }
+
+  &__listing-grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
 }
 
 .nav {
-  &__breadcrumb {
+  &__breadcrumb,
+  &__pagination {
     background-color: white !important;
     height: 50px;
     cursor: pointer;
