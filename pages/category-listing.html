@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kitab Pustakalaya</title>
+
+    <!-- Global -->
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/main.css" />
+
+    <!-- Bootstrap 5.2 -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- Bootstrap Icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- IonRangeSlider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav>
+      <div
+        class="container d-flex align-items-center justify-content-between h-100 text-light"
+      >
+        <!-- logo and Genres -->
+        <div class="d-flex align-items-end gap-4">
+          <a href="/index.html" class="nav__logo-container">
+            <img src="/assets/images/Logo.png" alt="Logo" />
+          </a>
+          <div class="dropdown nav__genres-dropdown mb-1">
+            <a
+              class=""
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Genres
+              <i class="bi bi-chevron-down"></i>
+            </a>
+
+            <ul class="dropdown-menu nav__genres-links">
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Action & Adventure</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Bios & History</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Children’s</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Horror</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Fantasy</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Historical Fiction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Literacy Fiction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Mystery & Thriller</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Non-Fiction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Romance</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Science Fiction</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="./pages/category-listing.html"
+                  >Young Adult</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- end of logo and Genres -->
+
+        <!-- login and cart -->
+        <div class="d-flex align-items-center gap-3">
+          <!-- login -->
+          <a href="/pages/login.html" class="nav__login">
+            <div class="d-flex align-items-center gap-2">
+              <i class="bi bi-box-arrow-in-right fs-4"></i>
+              <p class="text-uppercase fw-semibold fs-6">login</p>
+            </div>
+          </a>
+
+          <!-- cart -->
+          <a href="/pages/cart.html" class="nav__cart">
+            <div class="d-flex align-items-center gap-1">
+              <i class="bi bi-cart3 fs-4"></i>
+              <p class="text-uppercase fw-semibold fs-6">cart</p>
+            </div>
+          </a>
+        </div>
+        <!-- end of login and cart -->
+      </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- Category listing -->
+    <main>
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-3">
+            <!-- breadcrumb -->
+            <nav aria-label="breadcrumb" class="nav__breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="/index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Category Listing
+                </li>
+              </ol>
+            </nav>
+
+            <!-- end of breadcrumb -->
+
+            <div class="category__filter-column">
+              <div class="category__range-slider mb-2">
+                <h5
+                  class="category__range-head fw-semibold text-uppercase border-bottom pb-2"
+                >
+                  Price
+                </h5>
+                <input
+                  type="text"
+                  class="js-range-slider"
+                  name="my_range"
+                  value=""
+                  data-type="double"
+                  data-min="0"
+                  data-max="10000"
+                  data-from="0"
+                  data-to="5000"
+                  data-grid="false"
+                />
+                <span class="category__range-result">24 kitabs</span>
+              </div>
+
+              <div class="category__genres-filter">
+                <h5
+                  class="category__genres-head fw-semibold text-uppercase border-bottom pb-2"
+                >
+                  Genres
+                </h5>
+                <div class="category__genres-checkbox">
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineCheckbox1"
+                      >Romance</label
+                    >
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineCheckbox1"
+                      >Sci-fi</label
+                    >
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineCheckbox1"
+                      >Fantasy</label
+                    >
+                  </div>
+
+                  <div class="form-check form-check-inline">
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="inlineCheckbox1"
+                      value="option1"
+                    />
+                    <label class="form-check-label" for="inlineCheckbox1"
+                      >Children’s</label
+                    >
+                  </div>
+
+                  <div
+                    class="category__showMore border-bottom py-2 fw-semibold"
+                  >
+                    Show More
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-9 container">
+            <div
+              class="category__top-head d-flex align-items-center justify-content-between"
+            >
+              <h3 class="fw-semibold">
+                Showing Result of "Rich Dad and Poor Dad"
+              </h3>
+              <div class="dropdown">
+                <button
+                  class="btn category__sort-btn dropdown-toggle fw-semibold text-uppercase"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <i class="bi bi-filter"></i> Sort By
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- End of Category listing -->
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row pt-5">
+          <div class="col-lg-6 col-md-12 col-sm-12">
+            <a href="/index.html" class="footer__logo-container">
+              <img src="/assets/images/Logo.png" alt="Logo" />
+            </a>
+            <div class="footer__info w-lg-75 my-2">
+              A Place or Home when visited you're blessed with full of knowledge
+              and gets Enlighted. Kitab Pustakalaya for you.
+            </div>
+            <ul class="footer__contact">
+              <li class="footer__info-l">
+                <i class="bi bi-envelope"></i
+                ><span class="ms-2">Kitab@Pustakalaya.com</span>
+              </li>
+              <li class="footer__info-l">
+                <i class="bi bi-telephone"></i
+                ><span class="ms-2">+977-980066777</span>
+              </li>
+              <li class="footer__info-l">
+                <i class="bi bi-geo-alt"></i
+                ><span class="ms-2">Chabahil-5, Kathmandu</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+            <span class="footer__company fs-5 fw-semibold">Company</span>
+            <ul>
+              <li class="footer__links"><a href="#">About us</a></li>
+              <li class="footer__links">
+                <a href="/pages/contact-us.html">Contact us</a>
+              </li>
+              <li class="footer__links"><a href="#">Terms & conditions</a></li>
+              <li class="footer__links"><a href="#">FAQ</a></li>
+              <li class="footer__links"><a href="#">Careers</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+            <span class="footer__customer-care fs-5 fw-semibold"
+              >Customer Care</span
+            >
+            <ul>
+              <li class="footer__links"><a href="#">Help Center</a></li>
+              <li class="footer__links"><a href="#">How to Buy</a></li>
+              <li class="footer__links"><a href="#">Returns & Refunds</a></li>
+              <li class="footer__links"><a href="#">Orders</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-2 col-md-4 col-sm-4">
+            <span class="footer__payment-method fs-5 fw-semibold">
+              Payment Methods
+            </span>
+            <ul>
+              <li class="footer__icons">
+                <img
+                  src="/assets/images/cash-on-delivery.png"
+                  alt="cash on delivery"
+                />
+              </li>
+              <li class="footer__icons">
+                <img src="/assets/images/visa.png" alt="visa" />
+              </li>
+              <li class="footer__icons">
+                <img src="/assets/images/mastercard.png" alt="mastercard" />
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 py-4">
+            <div
+              class="d-flex align-items-center justify-content-between flex-column flex-md-row flex-lg-row border-top pt-3"
+            >
+              <p>&copy; Kitab Pustakalaya. All right reserved.</p>
+              <p>Powered by Something Pvt. ltd</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- End of Footer -->
+
+    <!-- Global -->
+    <!-- Jquery -->
+    <!-- Jquery -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+      integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Bootstrap 5.2 -->
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ionRangeSlider -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/js/ion.rangeSlider.min.js"></script>
+
+    <!-- Slick script -->
+    <script src="/assets/js/slickCarousel.js"></script>
+
+    <!-- Card script -->
+    <script src="/assets/js/card.js"></script>
+
+    <!-- Range Script -->
+    <script src="/assets/js/rangeSlider.js"></script>
+  </body>
+</html>

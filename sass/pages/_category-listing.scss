@@ -1,0 +1,42 @@
+@use "../sass-utils/variables" as color;
+
+.category {
+  &__filter-column {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: 1px solid #e9e4e4;
+    padding: 1.5rem;
+    border-radius: 5px;
+  }
+
+  &__range-result {
+    color: color.$text-color;
+    font-weight: 400;
+  }
+
+  &__genres-checkbox {
+    display: flex;
+    flex-direction: column;
+
+    .form-check {
+      margin-bottom: 0 !important;
+    }
+  }
+
+  &__showMore {
+    color: color.$primary-color;
+    cursor: pointer;
+  }
+
+  &__sort-btn {
+    background: color.$primary-color !important;
+    color: white !important;
+  }
+}
+
+.nav {
+  &__breadcrumb {
+    background-color: white !important;
+    height: 50px;
+    cursor: pointer;
+  }
+}
