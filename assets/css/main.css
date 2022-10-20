@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&family=Rubik:wght@500&display=swap");
-@import url(https://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css);
 body {
   margin: 0;
   padding: 0;
@@ -349,6 +348,23 @@ footer {
   z-index: 9999;
 }
 
+.similar-books__carousel .card__cart {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  right: 5px;
+  bottom: -20px;
+  z-index: 9999;
+}
+.similar-books__carousel .card__buttons {
+  display: flex;
+  gap: 5px;
+  position: absolute;
+  right: 50px;
+  bottom: 80px;
+  z-index: 9999;
+}
+
 .global-btn {
   background-color: #251f47;
   color: #ffffff;
@@ -398,43 +414,156 @@ footer {
   color: #251f47 !important;
 }
 
-.rating {
+.rating-loading {
+  width: 25px;
+  height: 25px;
+  font-size: 0;
+  color: #fff;
+  background: url(../img/loading.gif) top left no-repeat;
   border: none;
 }
 
-.rating > [id^=star] {
-  display: none;
-}
-
-.rating > label:before {
-  margin: 5px;
-  font-size: 1.5em;
-  font-family: FontAwesome;
+.rating-container .rating-stars {
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
   display: inline-block;
-  content: "\f005";
+  overflow: hidden;
+  white-space: nowrap;
 }
-
-.rating > .half:before {
-  content: "\f089";
+.rating-container .rating-input {
   position: absolute;
+  cursor: pointer;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  font-size: 1px;
+  border: none;
+  background: 0 0;
+  padding: 0;
+  margin: 0;
 }
 
-.rating > label {
-  color: #ddd;
+.rating-disabled .rating-input,
+.rating-disabled .rating-stars {
+  cursor: not-allowed;
+}
+
+.rating-container .star {
+  display: inline-block;
+  margin: 0 3px;
+  text-align: center;
+}
+.rating-container .empty-stars {
+  color: #686868;
+}
+.rating-container .filled-stars {
+  position: absolute;
+  left: 0;
+  top: 0;
+  margin: auto;
+  color: #000000;
+  white-space: nowrap;
+  overflow: hidden;
+  -webkit-text-stroke: 1px #000000;
+  text-shadow: 1px 1px #000000;
+}
+
+.rating-rtl {
   float: right;
 }
 
-/***** CSS Magic to Highlight Stars on Hover *****/
-.rating > [id^=star]:checked ~ label,
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
+.rating-animate .filled-stars {
+  transition: width 0.25s ease;
+  -o-transition: width 0.25s ease;
+  -moz-transition: width 0.25s ease;
+  -webkit-transition: width 0.25s ease;
+}
+
+.rating-rtl .filled-stars {
+  left: auto;
+  right: 0;
+  transform: matrix(-1, 0, 0, 1, 0, 0) translate3d(0, 0, 0);
+}
+.rating-rtl.is-star .filled-stars {
+  right: 0.06em;
+}
+.rating-rtl.is-heart .empty-stars {
+  margin-right: 0.07em;
+}
+
+.rating-lg {
+  font-size: 3.91em;
+}
+
+.rating-md {
+  font-size: 3.13em;
+}
+
+.rating-sm {
+  font-size: 2.5em;
+}
+
+.rating-xs {
+  font-size: 2em;
+}
+
+.rating-xl {
+  font-size: 4.89em;
+}
+
+.rating-container .clear-rating {
+  color: #aaa;
+  cursor: not-allowed;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 60%;
+  padding-right: 5px;
+}
+
+.clear-rating-active {
+  cursor: pointer !important;
+}
+.clear-rating-active:hover {
+  color: #843534;
+}
+
+.rating-container .caption {
+  color: #686868;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 5px;
+  margin-right: 0;
+}
+
+.rating-rtl .caption {
+  margin-right: 5px;
+  margin-left: 0;
+}
+
+@media print {
+  .rating-container .clear-rating {
+    display: none;
+  }
+}
+.empty-star {
   color: #000000;
-} /* hover previous stars in list */
-.rating > [id^=star]:checked + label:hover,
-.rating > [id^=star]:checked ~ label:hover,
-.rating > label:hover ~ [id^=star]:checked ~ label,
-.rating > [id^=star]:checked ~ label:hover ~ label {
-  color: #545454;
+}
+
+.rating-container .filled-stars {
+  -webkit-text-stroke: 0;
+  text-shadow: none;
+  color: #000000;
+}
+
+.progress {
+  margin-top: 1rem;
+  border-radius: 0;
+}
+
+.progress-bar {
+  background-color: #686868;
 }
 
 .main__banner-container {
@@ -1182,6 +1311,18 @@ footer {
   scale: 1.5;
 }
 
+.clear-rating,
+.clear-rating-active {
+  display: none !important;
+}
+
+.product-details__ratings .label,
+.product-details__ratings .label-info {
+  display: none !important;
+}
+.product-details__stock > *:first-child {
+  color: #128046;
+}
 .product-details__img__main {
   width: 100%;
   aspect-ratio: 1;
@@ -1224,4 +1365,107 @@ footer {
 }
 .product-details__social-link:is(:hover, :focus) {
   color: #686868;
+}
+
+.similar-books__carousel__buttons {
+  display: flex;
+  position: relative;
+}
+@media (max-width: 675px) {
+  .similar-books__carousel__buttons {
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+.similar-books__carousel__btn-left {
+  position: absolute;
+  top: -225px;
+  left: -50px;
+  cursor: pointer;
+}
+@media (max-width: 675px) {
+  .similar-books__carousel__btn-left {
+    position: static;
+  }
+}
+.similar-books__carousel__btn-right {
+  position: absolute;
+  top: -225px;
+  right: -50px;
+  cursor: pointer;
+}
+@media (max-width: 675px) {
+  .similar-books__carousel__btn-right {
+    position: static;
+  }
+}
+
+.user__rating__no-change {
+  position: relative;
+  z-index: -1;
+}
+.user__review {
+  border: none !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  padding-block: 0 !important;
+  padding-top: 1.625rem !important;
+  resize: vertical;
+}
+.user__review::-moz-placeholder {
+  color: #686868;
+}
+.user__review:-ms-input-placeholder {
+  color: #686868;
+}
+.user__review::placeholder {
+  color: #686868;
+}
+.user__review__container > * > *:nth-child(2) {
+  border-bottom: 1px solid rgba(167, 161, 161, 0.5137254902);
+}
+.user__review__time {
+  font-size: 0.8125rem;
+  padding-bottom: 0.2rem;
+}
+.user__review__text {
+  padding-bottom: 0.5rem;
+  padding-top: 0.3rem;
+}
+.user__review__time, .user__review__text {
+  color: #686868;
+}
+.user__review__load-more-btn {
+  background-color: transparent !important;
+  color: #4737a6;
+  border: none;
+  width: 7rem !important;
+}
+.user__review__load-more-btn:hover {
+  scale: 1.1;
+  color: rgba(72, 55, 166, 0.6901960784);
+}
+.user__review__add-btn {
+  padding: 0.5em 1em;
+  border: none;
+  color: #ffffff;
+  background-color: #251f47;
+  position: absolute;
+  top: 36px;
+  right: 13px;
+}
+.user__review__add-btn:is(:focus, :hover) {
+  background-color: rgba(37, 31, 71, 0.862745098);
+}
+.user__review__three-dot-btn {
+  position: absolute;
+  background-color: transparent;
+  color: #686868;
+  font-size: 1.5rem;
+  border: none;
+  top: 0px;
+  right: 10px;
+}
+.user__review__three-dot-btn:hover {
+  color: #000000;
 }/*# sourceMappingURL=main.css.map */
