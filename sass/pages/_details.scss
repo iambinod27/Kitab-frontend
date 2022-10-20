@@ -28,7 +28,24 @@
   }
 }
 
+.clear-rating,
+.clear-rating-active {
+  display: none !important;
+}
+
 .product-details {
+  &__ratings {
+    .label,
+    .label-info {
+      display: none !important;
+    }
+  }
+
+  &__stock {
+    & > *:first-child {
+      color: #128046;
+    }
+  }
   &__img {
     &__main {
       // width: clamp(450px, 475px, 491px);
@@ -84,6 +101,121 @@
 
       &:is(:hover, :focus) {
         color: $text-color;
+      }
+    }
+  }
+}
+
+.similar-books__carousel {
+  &__buttons {
+    display: flex;
+    position: relative;
+
+    @media (max-width: 675px) {
+      justify-content: center;
+      gap: 1rem;
+    }
+  }
+
+  &__btn-left {
+    position: absolute;
+    top: -225px;
+    left: -50px;
+    cursor: pointer;
+
+    @media (max-width: 675px) {
+      position: static;
+    }
+  }
+
+  &__btn-right {
+    position: absolute;
+    top: -225px;
+    right: -50px;
+    cursor: pointer;
+
+    @media (max-width: 675px) {
+      position: static;
+    }
+  }
+}
+
+// For user rating and review
+.user {
+  &__rating {
+    &__no-change {
+      position: relative;
+      z-index: -1;
+    }
+  }
+  &__review {
+    border: none !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+    // border-bottom: 2px solid #c4c4c4 !important;
+    padding-block: 0 !important;
+    padding-top: 1.625rem !important;
+    resize: vertical;
+
+    &::placeholder {
+      color: $text-color;
+    }
+
+    &__container {
+      & > * > *:nth-child(2) {
+        border-bottom: 1px solid $border-color-light;
+      }
+    }
+
+    &__time {
+      font-size: 0.8125rem;
+      padding-bottom: 0.2rem;
+    }
+    &__text {
+      padding-bottom: 0.5rem;
+      padding-top: 0.3rem;
+    }
+    &__time,
+    &__text {
+      color: $text-color;
+    }
+
+    &__load-more-btn {
+      background-color: transparent !important;
+      color: #4737a6;
+      border: none;
+      width: 7rem !important;
+
+      &:hover {
+        scale: 1.1;
+        color: #4837a6b0;
+      }
+    }
+
+    &__add-btn {
+      padding: 0.5em 1em;
+      border: none;
+      color: $primary-white;
+      background-color: $primary-color;
+      position: absolute;
+      top: 36px;
+      right: 13px;
+
+      &:is(:focus, :hover) {
+        background-color: $primary-color-light;
+      }
+    }
+    &__three-dot-btn {
+      position: absolute;
+      background-color: transparent;
+      color: $text-color;
+      font-size: 1.5rem;
+      border: none;
+      top: 0px;
+      right: 10px;
+
+      &:hover {
+        color: $dark;
       }
     }
   }
