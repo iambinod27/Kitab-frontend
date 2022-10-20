@@ -3,8 +3,10 @@
 .breadcrumb-item + .breadcrumb-item::before {
   content: symbol.$breadcrumb-divider !important;
 }
+
 .breadcrumb {
   margin-bottom: 2.8125rem !important;
+  font-style: italic;
 }
 
 .breadcrumb-item a {
