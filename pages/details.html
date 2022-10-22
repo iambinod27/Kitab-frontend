@@ -184,23 +184,22 @@
         </div>
         <div class="row">
           <!-- Product Pictures -->
-          <div class="col container mx-4 px-5 d-flex flex-column gap-4">
+          <div
+            class="container d-flex flex-column gap-4 col-12 col-lg mx-xxl-4 px-sm-5 px-lg-5 pb-4 pb-lg-0"
+          >
             <!-- Magnify on hover  -->
-            <div class="magnifier-thumb-wrapper position-relative">
+
+            <div id="zoom-img-wrapper" class="">
               <img
-                id="thumb"
-                class="product-details__img__main row"
-                src="/assets/images/book4large1.jpg"
-                alt="IT ENDS WITH US "
+                class="product-details__img__main"
+                src="/assets/images/book4large.jpg"
+                alt=""
               />
-              <div
-                class="magnifier-preview"
-                id="preview"
-                style="width: 300px; height: 300px"
-              ></div>
             </div>
             <!-- End of Magnify on hover -->
-            <div class="product-details__img__others row gap-lg-5">
+            <div
+              class="product-details__img__others row gap-3 gap-lg-4 gap-xxl-5"
+            >
               <img
                 class="product-details__img col img-active"
                 src="/assets/images/book4.jpg"
@@ -735,24 +734,21 @@
     <!-- Quantity script -->
     <script src="/assets/js/quantity.js"></script>
 
-    <!-- Product Image script-->
-    <script src="/assets/js/productImage.js"></script>
-
     <!-- Image Magnifier -->
-    <script src="/assets/js/imageMagnifier/Event.js"></script>
-    <script src="/assets/js/imageMagnifier/Magnifier.js"></script>
-    <script type="text/javascript">
-      var evt = new Event(),
-        m = new Magnifier(evt);
 
-      m.attach({
-        thumb: "#thumb",
-        large: "/assets/images/book4large.jpg",
-        largeWrapper: "preview",
-        zoom: 2,
-        zoomable: true,
+    <script
+      defer
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    ></script>
+    <script defer src="/assets/js/jquery.zoom.js"></script>
+    <script defer>
+      $(document).ready(function () {
+        $("#zoom-img-wrapper").zoom();
       });
     </script>
+
+    <!-- Product Image script-->
+    <script src="/assets/js/productImage.js"></script>
 
     <!-- Slick -->
     <script
