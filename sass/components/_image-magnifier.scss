@@ -2,10 +2,15 @@
   &::selection {
     background-color: transparent;
   }
-  img {
+  .product-details__img__main {
     display: block;
+    width: 570px;
     aspect-ratio: 0.8/1;
-    height: 570px;
+    margin-inline: auto;
+
+    @media (max-width: 576px) {
+      height: minmax(450, 490px);
+    }
   }
 
   .zoomImg {

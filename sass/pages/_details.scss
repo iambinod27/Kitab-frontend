@@ -34,7 +34,15 @@
 }
 
 .product-details {
+  &__head > *:last-child,
+  &__body__description,
+  &__body__actual-price {
+    color: $text-color;
+  }
   &__ratings {
+    position: relative;
+    z-index: -1;
+
     .label,
     .label-info {
       display: none !important;
@@ -47,12 +55,12 @@
     }
   }
   &__img {
-    &__main {
-      // width: clamp(450px, 475px, 491px);
-      width: 100%;
-      aspect-ratio: 1;
-    }
     &__others {
+      @media (max-width: 470px) {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+      }
+
       .img-active {
         border-color: $dark !important;
       }
@@ -142,6 +150,14 @@
 
 // For user rating and review
 .user {
+  &__default-review-input {
+    padding-inline-end: 9rem !important;
+
+    @media (max-width: 768px) {
+      padding-inline-end: 0.5rem !important;
+    }
+  }
+
   &__rating {
     &__no-change {
       position: relative;
@@ -152,16 +168,26 @@
     border: none !important;
     background-color: transparent !important;
     box-shadow: none !important;
-    // border-bottom: 2px solid #c4c4c4 !important;
     padding-block: 0 !important;
-    padding-top: 1.625rem !important;
-    resize: vertical;
+    padding-top: 1.85rem !important;
+    cursor: text;
+    resize: none;
+    outline: none;
+    overflow: hidden;
+
+    &::-webkit-scrollbar {
+      width: 0px;
+    }
 
     &::placeholder {
       color: $text-color;
     }
 
     &__container {
+      a > img {
+        width: 70px;
+        aspect-ratio: 1;
+      }
       & > * > *:nth-child(2) {
         border-bottom: 1px solid $border-color-light;
       }
@@ -198,8 +224,13 @@
       color: $primary-white;
       background-color: $primary-color;
       position: absolute;
-      top: 36px;
-      right: 13px;
+      bottom: -55px;
+
+      @media (min-width: 768px) {
+        top: 25px;
+        right: 5px;
+        bottom: unset !important ;
+      }
 
       &:is(:focus, :hover) {
         background-color: $primary-color-light;
@@ -213,6 +244,11 @@
       border: none;
       top: 0px;
       right: 10px;
+
+      @media (max-width: 410px) {
+        right: -10px;
+        top: -8px;
+      }
 
       &:hover {
         color: $dark;

@@ -74,26 +74,3 @@
     z-index: 9999;
   }
 }
-
-// For Similar Books only
-.similar-books__carousel {
-  .card {
-    &__cart {
-      display: flex;
-      gap: 5px;
-      position: absolute;
-      right: 5px;
-      bottom: -20px;
-      z-index: 9999;
-    }
-
-    &__buttons {
-      display: flex;
-      gap: 5px;
-      position: absolute;
-      right: 50px;
-      bottom: 80px;
-      z-index: 9999;
-    }
-  }
-}
