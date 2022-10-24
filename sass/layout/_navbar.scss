@@ -2,7 +2,16 @@
 
 nav {
   background-color: color.$primary-color;
-  height: 110px;
+  padding-block: 2.5rem;
+}
+
+.navbar-toggler {
+  background-color: white;
+  background-clip: border-box;
+
+  &:is(:hover, :focus) {
+    box-shadow: 0 0 0.125em 0.25em rgb(white, 0.3) !important;
+  }
 }
 
 .nav {
@@ -19,6 +28,11 @@ nav {
   }
 
   &__genres-dropdown {
+    @media (min-width: 768px) {
+      margin-right: auto;
+      margin-top: 2.3rem;
+    }
+
     a {
       color: color.$primary-white;
       text-decoration: none;
@@ -35,9 +49,25 @@ nav {
     height: 200px;
     overflow: scroll;
 
+    @media (max-width: 768px) {
+      display: flex;
+      height: 105px;
+      background-color: transparent !important;
+      width: 275px;
+      border: white !important;
+    }
     a {
       color: black;
       font-weight: 400;
+
+      @media (max-width: 768px) {
+        color: white;
+
+        &:is(:hover, :focus) {
+          color: black !important;
+          background-color: white !important;
+        }
+      }
     }
   }
 
