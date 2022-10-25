@@ -145,7 +145,15 @@ ul {
 
 nav {
   background-color: #251f47;
-  height: 110px;
+  padding-block: 2.5rem;
+}
+
+.navbar-toggler {
+  background-color: white;
+  background-clip: border-box;
+}
+.navbar-toggler:is(:hover, :focus) {
+  box-shadow: 0 0 0.125em 0.25em rgba(255, 255, 255, 0.3) !important;
 }
 
 .nav__logo-container {
@@ -158,6 +166,12 @@ nav {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+}
+@media (min-width: 768px) {
+  .nav__genres-dropdown {
+    margin-right: auto;
+    margin-top: 2.3rem;
+  }
 }
 .nav__genres-dropdown a {
   color: #ffffff;
@@ -172,9 +186,27 @@ nav {
   height: 200px;
   overflow: scroll;
 }
+@media (max-width: 768px) {
+  .nav__genres-links {
+    display: flex;
+    height: 105px;
+    background-color: transparent !important;
+    width: 275px;
+    border: white !important;
+  }
+}
 .nav__genres-links a {
   color: black;
   font-weight: 400;
+}
+@media (max-width: 768px) {
+  .nav__genres-links a {
+    color: white;
+  }
+  .nav__genres-links a:is(:hover, :focus) {
+    color: black !important;
+    background-color: white !important;
+  }
 }
 .nav__login, .nav__cart {
   color: #ffffff;
