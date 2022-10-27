@@ -157,7 +157,6 @@ nav {
 }
 
 .nav__logo-container {
-  width: 60px;
   height: 40px;
   display: block;
 }
@@ -172,13 +171,13 @@ nav {
     height: 70px;
   }
 }
-.nav__logo-container img {
+.nav__logo-container .nav-logo {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
 }
 @media (min-width: 768px) {
-  .nav__logo-container img {
+  .nav__logo-container .nav-logo {
     width: 100%;
   }
 }
