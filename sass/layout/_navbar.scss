@@ -16,7 +16,6 @@ nav {
 
 .nav {
   &__logo-container {
-    width: 60px;
     height: 40px;
     display: block;
 
@@ -29,7 +28,7 @@ nav {
       height: 70px;
     }
 
-    img {
+    .nav-logo {
       height: 100%;
       object-fit: contain;
 
