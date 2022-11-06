@@ -363,12 +363,18 @@ footer {
   }
 }
 
+.nav__breadcrumb {
+  background-color: white !important;
+  padding-block: 0 !important;
+  cursor: pointer;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
   content: ">" !important;
 }
 
 .breadcrumb {
-  margin-bottom: 2.8125rem !important;
+  margin-bottom: clamp(2.25rem, 5vw, 2.8125rem) !important;
   font-style: italic;
 }
 
@@ -378,6 +384,12 @@ footer {
 }
 .breadcrumb-item a:hover {
   color: #686868;
+}
+
+.nav__pagination {
+  background-color: white !important;
+  padding-block: 0 !important;
+  cursor: pointer;
 }
 
 .pagination {
@@ -403,7 +415,6 @@ footer {
   height: 25px;
   font-size: 0;
   color: #fff;
-  background: url(../img/loading.gif) top left no-repeat;
   border: none;
 }
 
@@ -1263,12 +1274,6 @@ footer {
   align-items: center;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   gap: 1rem;
-}
-
-.nav__breadcrumb, .nav__pagination {
-  background-color: white !important;
-  height: 50px;
-  cursor: pointer;
 }
 
 #quantity-no {

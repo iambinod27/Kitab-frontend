@@ -1,4 +1,11 @@
 @use "../sass-utils/variables" as color;
+
+.nav__pagination {
+  background-color: white !important;
+  padding-block: 0 !important;
+  cursor: pointer;
+}
+
 .pagination {
   --bs-pagination-border-width: 0 !important;
   --bs-pagination-border-color: none !important;
