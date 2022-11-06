@@ -1,11 +1,17 @@
 @use "../sass-utils/variables" as symbol;
 
+.nav__breadcrumb {
+  background-color: white !important;
+  padding-block: 0 !important;
+  cursor: pointer;
+}
+
 .breadcrumb-item + .breadcrumb-item::before {
   content: symbol.$breadcrumb-divider !important;
 }
 
 .breadcrumb {
-  margin-bottom: 2.8125rem !important;
+  margin-bottom: clamp(2.25rem, 5vw, 2.8125rem) !important;
   font-style: italic;
 }
 
