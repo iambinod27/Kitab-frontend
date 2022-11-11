@@ -39,7 +39,144 @@
     />
   </head>
   <body>
-    /
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-md py-3">
+      <div
+        class="container d-flex align-items-center justify-content-between h-100 text-light gap-4"
+      >
+        <!-- Nav logo -->
+        <div class="d-flex align-items-end">
+          <a href="/index.html" class="nav__logo-container">
+            <img class="nav-logo" src="/assets/images/Logo.png" alt="Logo" />
+          </a>
+        </div>
+
+        <!-- End of Nav logo -->
+
+        <!-- Nav-links toggler -->
+        <button
+          class="navbar-toggler border-0 navbar-dark"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navLinksContainer"
+          aria-controls="navLinksContainer"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- End of Nav-links toggler -->
+        <!-- Nav-links -->
+        <div id="navLinksContainer" class="navbar-collapse collapse w-100">
+          <ul
+            class="navbar-nav d-flex align-items-md-end flex-md-row gap-3 gap-md-4 w-100"
+          >
+            <!-- Genres -->
+            <li class="dropdown nav__genres-dropdown">
+              <a
+                class=""
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Genres
+                <i class="bi bi-chevron-down"></i>
+              </a>
+
+              <ul class="dropdown-menu nav__genres-links">
+                <li>
+                  <a class="dropdown-item" href="../pages/category-listing.html"
+                    >Action & Adventure</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/category-listing.html"
+                    >Bios & History</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/category-listing.html"
+                    >Children’s</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/category-listing.html"
+                    >Horror</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/category-listing.html"
+                    >Fantasy</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/category-listing.html"
+                    >Historical Fiction</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/category-listing.html"
+                    >Literacy Fiction</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/category-listing.html"
+                    >Mystery & Thriller</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/category-listing.html"
+                    >Non-Fiction</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/category-listing.html"
+                    >Romance</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/category-listing.html"
+                    >Science Fiction</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="../pages/category-listing.html"
+                    >Young Adult</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <!-- End of Genres -->
+
+            <!-- login -->
+            <li class="nav-item">
+              <a href="../pages/login.html" class="nav__login">
+                <div class="d-flex align-items-center gap-2">
+                  <i class="bi bi-box-arrow-in-right fs-4"></i>
+                  <p class="text-uppercase fw-semibold fs-6">login</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <!-- End of Login -->
+
+              <!-- cart -->
+              <a href="../pages/cart.html" class="nav__cart">
+                <div class="d-flex align-items-center gap-1">
+                  <i class="bi bi-cart3 fs-4"></i>
+                  <p class="text-uppercase fw-semibold fs-6">cart</p>
+                </div>
+              </a>
+              <!-- End of cart -->
+            </li>
+          </ul>
+        </div>
+
+        <!-- End of Nav Links -->
+      </div>
+    </nav>
+    <!-- end of navbar -->
 
     <!-- Main Banner -->
     <main>
@@ -123,12 +260,12 @@
                             href="/pages/details.html"
                           >
                             <img src="/assets/images/book1.jpg" alt="Book1" />
-                            <div class="card__buttons">
-                              <div class="card__circle">
-                                <i class="bi bi-heart fs-4 text-light"></i>
-                              </div>
-                            </div>
                           </a>
+                          <div class="card__buttons">
+                            <div class="card__circle">
+                              <i class="bi bi-heart fs-4 text-light"></i>
+                            </div>
+                          </div>
                           <div class="card__content">
                             <a href="/pages/details.html">
                               <h6 class="fw-semibold">
@@ -150,12 +287,12 @@
                             href="/pages/details.html"
                           >
                             <img src="/assets/images/book2.jpg" alt="Book1" />
-                            <div class="card__buttons">
-                              <div class="card__circle">
-                                <i class="bi bi-heart fs-4 text-light"></i>
-                              </div>
-                            </div>
                           </a>
+                          <div class="card__buttons">
+                            <div class="card__circle">
+                              <i class="bi bi-heart fs-4 text-light"></i>
+                            </div>
+                          </div>
                           <div class="card__content">
                             <a href="/pages/details.html">
                               <h6 class="fw-semibold">
@@ -177,12 +314,12 @@
                             href="/pages/details.html"
                           >
                             <img src="/assets/images/book3.jpg" alt="Book1" />
-                            <div class="card__buttons">
-                              <div class="card__circle">
-                                <i class="bi bi-heart fs-4 text-light"></i>
-                              </div>
-                            </div>
                           </a>
+                          <div class="card__buttons">
+                            <div class="card__circle">
+                              <i class="bi bi-heart fs-4 text-light"></i>
+                            </div>
+                          </div>
                           <div class="card__content">
                             <a href="/pages/details.html">
                               <h6 class="fw-semibold">
@@ -204,12 +341,12 @@
                             href="/pages/details.html"
                           >
                             <img src="/assets/images/book4.jpg" alt="Book1 " />
-                            <div class="card__buttons">
-                              <div class="card__circle">
-                                <i class="bi bi-heart fs-4 text-light"></i>
-                              </div>
-                            </div>
                           </a>
+                          <div class="card__buttons">
+                            <div class="card__circle">
+                              <i class="bi bi-heart fs-4 text-light"></i>
+                            </div>
+                          </div>
                           <div class="card__content">
                             <a href="/pages/details.html">
                               <h6 class="fw-semibold">
@@ -413,5 +550,8 @@
 
     <!-- Slick script -->
     <script src="/assets/js/slickCarousel.js"></script>
+
+    <!-- Card Script -->
+    <script src="/assets/js/card.js"></script>
   </body>
 </html>
