@@ -1,4 +1,7 @@
 const images = document.querySelectorAll(".product-details__img");
+const imagesWrapper = document.querySelectorAll(
+  ".product-details__img__wrapper"
+);
 const mainImage = document.querySelector(".product-details__img__main");
 const imageContainer = document.querySelector(".product-details__img__others");
 
@@ -8,12 +11,12 @@ document.addEventListener("DOMContentLoaded", () => {
   const zoomImageWrapper = document.querySelector("#zoom-img-wrapper");
 
   for (let i = 0; i < images.length; i++) {
-    images[i].addEventListener("click", (e) => {
+    images[i].addEventListener("mouseover", (e) => {
       // Remove img-active from all images
       for (let j = 0; j < images.length; j++)
         imageContainer.children[j].classList.remove("img-active");
       // Add img-active class to clicked ones
-      images[i].classList.add("img-active");
+      imagesWrapper[i].classList.add("img-active");
       mainImage.src = images[i].src;
       mainImage.alt = images[i].alt;
 

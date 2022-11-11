@@ -9,11 +9,15 @@
     height: 40rem;
     border-bottom: none !important;
     border-right: 2px solid color.$profile-border-color;
+    position: sticky;
+    top: 2rem;
 
     @media (max-width: 768px) {
       border-right: none;
       border-bottom: 2px solid color.$profile-border-color !important;
       height: auto !important;
+      position: unset;
+      top: unset;
     }
 
     &-pic {

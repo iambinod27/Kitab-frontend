@@ -65,11 +65,16 @@
         border-color: $dark !important;
       }
 
-      & * {
+      & > * {
         width: 140px;
         aspect-ratio: 1;
         border: 4px solid $text-color;
-
+        @media (max-width: 1200px) {
+          border-width: 3px;
+        }
+        @media (max-width: 576px) {
+          border-width: 2px;
+        }
         &:is(:focus, :hover) {
           border-color: $dark;
         }

@@ -84,8 +84,8 @@ $(".carousel-author__books").slick({
   speed: 300,
   slidesToShow: 3,
   slidesToScroll: 1,
-  nextArrow: ".carousel-author__books__btn-left",
-  prevArrow: ".carousel-author__books__btn-right",
+  nextArrow: ".carousel-author__books__btn-right",
+  prevArrow: ".carousel-author__books__btn-left",
   responsive: [
     {
       breakpoint: 1024,
