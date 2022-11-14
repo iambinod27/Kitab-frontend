@@ -179,146 +179,168 @@
     <!-- end of navbar -->
 
     <!-- Main Banner -->
-    <main>
+    <main class="container">
       <div class="row">
-        <div class="col-lg-8">
-          <div class="container p-5">
+        <div class="col-lg-8 py-5">
+          <div class="container px-lg-5">
             <div class="cart__listing-head">
               <h2>Your Cart</h2>
-              <div class="cart__listing-count">2 Items</div>
+              <h2 class="cart__listing-count">2 Items</h2>
             </div>
 
             <div class="row cart__listing-subhead py-3 px-2">
               <div class="col-5">
                 <h6 class="fs-6 text-uppercase fw-semibold">cart Items</h6>
               </div>
-              <div class="col-3">
-                <h6 class="fs-6 text-uppercase fw-semibold text-center">
-                  Quanitity
-                </h6>
-              </div>
-              <div class="col-2">
-                <h6 class="fs-6 text-uppercase fw-semibold text-center">
-                  Price
-                </h6>
-              </div>
-              <div class="col-2">
-                <h6 class="fs-6 text-uppercase fw-semibold text-center">
-                  Total
-                </h6>
+              <div class="col-7 d-flex">
+                <div class="col-6 col-md-5 col-lg-4">
+                  <h6
+                    class="fs-6 text-uppercase fw-semibold text-center pe-lg-3 pe-xl-0"
+                  >
+                    Quanitity
+                  </h6>
+                </div>
+                <div class="col-3 col-md col-lg-4">
+                  <h6 class="fs-6 text-uppercase fw-semibold text-center">
+                    Price
+                  </h6>
+                </div>
+                <div class="col-3 col-md col-lg-4">
+                  <h6 class="fs-6 text-uppercase fw-semibold text-center">
+                    Total
+                  </h6>
+                </div>
               </div>
             </div>
 
-            <div class="cart__items">
+            <div class="cart-items ps-3 ps-sm-0">
               <!-- Cart -1  -->
-              <div class="row mb-3">
-                <div class="col-5">
-                  <div class="d-flex align-items-center container gap-2">
-                    <div class="cart__product-img">
-                      <img src="../assets/images/book4.jpg" alt="cart-img" />
+              <div class="row my-4 mt-sm-0 cart-item">
+                <div class="col-2 w-auto">
+                  <div class="cart__product-img me-2">
+                    <img src="../assets/images/book4.jpg" alt="cart-img" />
+                  </div>
+                </div>
+                <div class="col position-relative d-sm-flex">
+                  <div
+                    class="d-flex flex-column responsive-row col-sm-3 col-xl-4"
+                  >
+                    <a
+                      href="/pages/details.html"
+                      class="cart__product-detail-head fs-6 fw-semibold text-uppercase"
+                    >
+                      Neymar: The Magical Story
+                    </a>
+                    <div class="cart__product-remove">
+                      <i class="bi bi-trash"></i>
+                      <span class="d-none d-sm-inline-block">Remove</span>
                     </div>
-                    <div class="d-flex flex-column">
-                      <a
-                        href="/pages/product-detail.html"
-                        class="cart__product-detail-head fs-6 fw-semibold text-uppercase"
+                  </div>
+                  <div
+                    class="responsive-row flex-row-reverse flex-sm-row col-sm d-sm-flex ps-sm-4 ps-md-0"
+                  >
+                    <div class="col-3 col-sm-6 col-lg-4">
+                      <div
+                        class="d-flex align-items-center gap-1 h-100 justify-content-center pe-sm-3 pe-md-0 ms-md-3 ps-md-4 ms-lg-0 ps-lg-4 ps-xl-0 ms-xl-0 ps-xxl-3"
                       >
-                        Neymar: The Magical Story
-                      </a>
-                      <div class="cart__product-remove">
-                        <i class="bi bi-trash"></i> Remove
+                        <div class="cart__less fs-4">
+                          <i class="bi bi-dash"></i>
+                        </div>
+                        <input
+                          type="number"
+                          max="5"
+                          class="cart__input"
+                          value="2"
+                        />
+                        <div class="cart__more fs-4">
+                          <i class="bi bi-plus"></i>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                  <div
-                    class="d-flex align-items-center gap- h-100 justify-content-center"
-                  >
-                    <div class="cart__less fs-4">
-                      <i class="bi bi-dash"></i>
+                    <div class="cart-items__price col-9 col-sm-3 col-lg-4">
+                      <div
+                        class="d-flex align-items-sm-center h-100 justify-content-sm-center"
+                      >
+                        NPR 250.00
+                      </div>
                     </div>
-                    <input
-                      type="number"
-                      max="5"
-                      class="cart__input"
-                      value="2"
-                    />
-                    <div class="cart__more fs-4">
-                      <i class="bi bi-plus"></i>
+                    <div
+                      class="cart-items__total col col-sm-3 col-lg-4 d-none d-sm-block"
+                    >
+                      <div
+                        class="fw-semibold d-flex align-items-center h-100 justify-content-center"
+                      >
+                        NPR 500.00
+                      </div>
                     </div>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <div
-                    class="fw-semibold d-flex align-items-center h-100 justify-content-center"
-                  >
-                    NPR 250.00
-                  </div>
-                </div>
-                <div class="col-2">
-                  <div
-                    class="fw-semibold d-flex align-items-center h-100 justify-content-center"
-                  >
-                    NPR 500.00
                   </div>
                 </div>
               </div>
               <!-- End of Cart-1 -->
 
-              <!-- Cart -1  -->
-              <div class="row mb-3">
-                <div class="col-5">
-                  <div class="d-flex align-items-center container gap-2">
-                    <div class="cart__product-img">
-                      <img src="../assets/images/book5.jpg" alt="cart-img" />
+              <!-- Cart -2  -->
+              <div class="row my-4 mt-sm-0 cart-item">
+                <div class="col-2 w-auto">
+                  <div class="cart__product-img me-2">
+                    <img src="../assets/images/book5.jpg" alt="cart-img" />
+                  </div>
+                </div>
+                <div class="col position-relative d-sm-flex">
+                  <div
+                    class="d-flex flex-column responsive-row col-sm-3 col-xl-4"
+                  >
+                    <a
+                      href="/pages/details.html"
+                      class="cart__product-detail-head fs-6 fw-semibold text-uppercase"
+                    >
+                      Lional Messi - The Ultimate Fanbook
+                    </a>
+                    <div class="cart__product-remove">
+                      <i class="bi bi-trash"></i>
+                      <span class="d-none d-sm-inline-block">Remove</span>
                     </div>
-                    <div class="d-flex flex-column">
-                      <a
-                        href="/pages/product-detail.html"
-                        class="cart__product-detail-head fs-6 fw-semibold text-uppercase"
+                  </div>
+                  <div
+                    class="responsive-row flex-row-reverse flex-sm-row col-sm d-sm-flex ps-sm-4 ps-md-0"
+                  >
+                    <div class="col-3 col-sm-6 col-lg-4">
+                      <div
+                        class="d-flex align-items-center gap-1 h-100 justify-content-center pe-sm-3 pe-md-0 ms-md-3 ps-md-4 ms-lg-0 ps-lg-4 ps-xl-0 ms-xl-0 ps-xxl-3"
                       >
-                        Lional Messi - The Ultimate Fanbook
-                      </a>
-                      <div class="cart__product-remove">
-                        <i class="bi bi-trash"></i> Remove
+                        <div class="cart__less fs-4">
+                          <i class="bi bi-dash"></i>
+                        </div>
+                        <input
+                          type="number"
+                          max="5"
+                          class="cart__input"
+                          value="2"
+                        />
+                        <div class="cart__more fs-4">
+                          <i class="bi bi-plus"></i>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="cart-items__price col-9 col-sm-3 col-lg-4">
+                      <div
+                        class="d-flex align-items-sm-center h-100 justify-content-sm-center"
+                      >
+                        NPR 300.00
+                      </div>
+                    </div>
+                    <div
+                      class="cart-items__total col col-sm-3 col-lg-4 d-none d-sm-block"
+                    >
+                      <div
+                        class="fw-semibold d-flex align-items-center h-100 justify-content-center"
+                      >
+                        NPR 600.00
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="col-3">
-                  <div
-                    class="d-flex align-items-center gap- h-100 justify-content-center"
-                  >
-                    <div class="cart__less fs-4">
-                      <i class="bi bi-dash"></i>
-                    </div>
-                    <input
-                      type="number"
-                      max="5"
-                      class="cart__input"
-                      value="2"
-                    />
-                    <div class="cart__more fs-4">
-                      <i class="bi bi-plus"></i>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-2">
-                  <div
-                    class="fw-semibold d-flex align-items-center h-100 justify-content-center"
-                  >
-                    NPR 300.00
-                  </div>
-                </div>
-                <div class="col-2">
-                  <div
-                    class="fw-semibold d-flex align-items-center h-100 justify-content-center"
-                  >
-                    NPR 600.00
-                  </div>
-                </div>
               </div>
-              <!-- End of Cart-1 -->
+              <!-- End of Cart-2 -->
             </div>
 
             <div class="cart__continue d-flex align-items-center">
@@ -362,7 +384,7 @@
                 </div>
               </div>
 
-              <div class="cart__summary-promo pb-4">
+              <div class="cart__summary-promo pb-3 pb-sm-4">
                 <div class="fs-5 text-uppercase fw-semibold">promo code</div>
                 <form class="mt-2">
                   <input
