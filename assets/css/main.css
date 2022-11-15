@@ -920,6 +920,11 @@ footer {
   margin-block: 2.5rem;
 }
 
+.similar-author__profile-pic {
+  width: 180px !important;
+  aspect-ratio: 1;
+}
+
 .carousel-author__books__buttons {
   display: flex;
   position: relative;
@@ -1163,9 +1168,40 @@ footer {
 .cart__less, .cart__more {
   cursor: pointer;
 }
-.cart__items {
+.cart-items {
   overflow-y: scroll;
   height: 300px;
+}
+.cart-items__price > * {
+  font-weight: 600;
+}
+@media (max-width: 576px) {
+  .cart-items__price > * {
+    font-size: 0.8125rem;
+    color: #686868;
+    font-weight: 400;
+  }
+}
+@media (min-width: 576px) and (max-width: 768px) {
+  .cart-items__price, .cart-items__total {
+    padding-left: 0.5rem !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cart-items__price, .cart-items__total {
+    padding-left: 1.5rem !important;
+  }
+}
+@media (max-width: 576px) {
+  .cart-item *.responsive-row {
+    --bs-gutter-x: 0rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-0.5 * var(--bs-gutter-x));
+    margin-left: calc(-0.5 * var(--bs-gutter-x));
+  }
 }
 .cart__continue a {
   color: #686868;
@@ -1205,6 +1241,23 @@ footer {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.cart__product-remove > * {
+  color: #686868 !important;
+}
+@media (max-width: 576px) {
+  .cart__product-remove {
+    position: absolute !important;
+    bottom: 10px !important;
+  }
+  .cart__product-remove > * {
+    color: #ff4848 !important;
+  }
+}
+@media (max-width: 576px) {
+  .cart__listing-subhead {
+    display: none !important;
+  }
+}
 .cart__listing-subhead h6 {
   color: #686868;
 }
@@ -1214,17 +1267,19 @@ footer {
   background-color: #ff4848;
   color: #ffffff;
 }
-.cart__listing-count {
-  font-size: 2rem;
-  font-weight: 400;
-}
 .cart__summary {
   background-color: #eef0f2;
 }
 .cart__summary-input {
   border: none;
   padding: 10px;
-  width: 60%;
+  width: 100%;
+  margin-bottom: 0.35rem;
+}
+@media (min-width: 317.999999px) {
+  .cart__summary-input {
+    width: 60%;
+  }
 }
 .cart__summary-input::-moz-placeholder {
   text-transform: capitalize;
