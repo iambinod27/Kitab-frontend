@@ -4,6 +4,13 @@
   background-color: white !important;
   padding-block: 0 !important;
   cursor: pointer;
+
+  &__wrapper {
+    width: 25% !important;
+    @media (max-width: 992px) {
+      width: 100% !important;
+    }
+  }
 }
 
 .breadcrumb-item + .breadcrumb-item::before {

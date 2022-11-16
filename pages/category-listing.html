@@ -31,7 +31,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/ion-rangeslider/2.3.1/css/ion.rangeSlider.min.css"
     />
   </head>
-  <body>
+  <body class="resize-animation-stopper">
     <!-- navbar -->
     <nav class="navbar navbar-expand-md py-3">
       <div
@@ -175,7 +175,7 @@
     <main>
       <div class="container py-5">
         <div class="row">
-          <div class="col-3">
+          <div class="col-3 responsive-row-lg nav__breadcrumb__wrapper">
             <!-- breadcrumb -->
             <nav aria-label="breadcrumb" class="nav__breadcrumb">
               <ol class="breadcrumb">
@@ -187,7 +187,137 @@
             </nav>
 
             <!-- end of breadcrumb -->
-
+          </div>
+          <div class="col-9 category__top-head__wrapper">
+            <div class="category__top-head d-flex align-items-center ms-lg-4">
+              <h3 class="fw-semibold">
+                Showing Result of "Rich Dad and Poor Dad"
+              </h3>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-start justify-content-lg-end mb-2 pe-3">
+          <div class="dropdown w-auto">
+            <button
+              class="btn category__sort-btn dropdown-toggle fw-semibold text-uppercase"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="bi bi-filter"></i
+              ><span class="d-none d-lg-inline-block ms-lg-1">Sort By</span>
+            </button>
+            <ul
+              class="category__sort-dropdown dropdown-menu dropdown-menu-start"
+            >
+              <li class="dropdown-item">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="inlineRadio1"
+                  value="option1"
+                  name="sort"
+                />
+                <label class="form-check-label" for="inlineRadio1"
+                  >Latest / Recent</label
+                >
+              </li>
+              <li class="dropdown-item">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="inlineRadio2"
+                  value="option2"
+                  name="sort"
+                />
+                <label class="form-check-label" for="inlineRadio2"
+                  >Popular</label
+                >
+              </li>
+              <li class="dropdown-item">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="inlineRadio3"
+                  value="option3"
+                  name="sort"
+                />
+                <label class="form-check-label" for="inlineRadio3"
+                  >Oldest</label
+                >
+              </li>
+              <li class="dropdown-item">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="inlineRadio4"
+                  value="option4"
+                  name="sort"
+                />
+                <label class="form-check-label" for="inlineRadio4"
+                  >Highest to Lowest Price</label
+                >
+              </li>
+              <li class="dropdown-item">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="inlineRadio5"
+                  value="option5"
+                  name="sort"
+                />
+                <label class="form-check-label" for="inlineRadio5"
+                  >Lowest to Highest Price</label
+                >
+              </li>
+              <li class="dropdown-item">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="inlineRadio6"
+                  value="option6"
+                  name="sort"
+                />
+                <label class="form-check-label" for="inlineRadio6"
+                  >A - Z (Ascending)</label
+                >
+              </li>
+              <li class="dropdown-item">
+                <input
+                  class="form-check-input"
+                  type="radio"
+                  id="inlineRadio7"
+                  value="option7"
+                  name="sort"
+                />
+                <label class="form-check-label" for="inlineRadio7"
+                  >Z - A (Descending)</label
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="w-auto">
+            <button
+              class="btn category__filter-btn fw-semibold text-uppercase"
+              type="button"
+            >
+              <i class="bi bi-funnel"></i>
+              <span class="d-none d-lg-block">Filter</span>
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-lg-3 category__filter-column__wrapper"
+            visibility="false"
+          >
+            <div
+              class="d-flex d-lg-none justify-content-start align-items-center"
+            >
+              <button class="category__filter-column__wrapper__remove-btn">
+                <i class="bi bi-x-lg"></i>
+              </button>
+            </div>
             <div class="category__filter-column">
               <div class="category__range-slider mb-2">
                 <h5
@@ -273,36 +403,11 @@
               </div>
             </div>
           </div>
-          <div class="col-9 container">
-            <div
-              class="category__top-head d-flex align-items-center justify-content-between"
-            >
-              <h3 class="fw-semibold">
-                Showing Result of "Rich Dad and Poor Dad"
-              </h3>
-              <div class="dropdown">
-                <button
-                  class="btn category__sort-btn dropdown-toggle fw-semibold text-uppercase"
-                  type="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  <i class="bi bi-filter"></i> Sort By
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
+          <div class="col-lg-9 container">
             <div class="category__listing-grid py-2">
               <!-- Card 1 -->
               <div class="card">
-                <a class="card__img-container" href="./pages/details.html">
+                <a class="card__img-container" href="/pages/details.html">
                   <img
                     src="https://m.media-amazon.com/images/I/71jW2qrp+SL.jpg"
                     alt="Book1"
@@ -314,7 +419,7 @@
                   </div>
                 </div>
                 <div class="card__content">
-                  <a href="./pages/details.html">
+                  <a href="/pages/details.html">
                     <h6 class="fw-semibold">Start with why by Simon sinek</h6>
                   </a>
                   <span class="card__price"
@@ -327,8 +432,8 @@
 
               <!-- Card 3-->
               <div class="card">
-                <a class="card__img-container" href="./pages/details.html">
-                  <img src="./assets/images/book5.jpg" alt="Book1" />
+                <a class="card__img-container" href="/pages/details.html">
+                  <img src="/assets/images/book5.jpg" alt="Book1" />
                 </a>
                 <div class="card__buttons">
                   <div class="card__circle">
@@ -336,7 +441,7 @@
                   </div>
                 </div>
                 <div class="card__content">
-                  <a href="./pages/details.html">
+                  <a href="/pages/details.html">
                     <h6 class="fw-semibold">
                       Death - An inside Story By Sadhguru
                     </h6>
@@ -351,7 +456,7 @@
 
               <!-- Card 5 -->
               <div class="card">
-                <a class="card__img-container" href="./pages/details.html">
+                <a class="card__img-container" href="/pages/details.html">
                   <img
                     src="https://m.media-amazon.com/images/I/5112YFsXIJL.jpg"
                     alt="Book1"
@@ -512,5 +617,11 @@
 
     <!-- Range Script -->
     <script src="/assets/js/rangeSlider.js"></script>
+
+    <!-- Button script -->
+    <script src="/assets/js/buttons.js"></script>
+
+    <!-- Animation stopper on resize script -->
+    <script src="/assets/js/resizeAnimationStop.js"></script>
   </body>
 </html>

@@ -1,11 +1,84 @@
 @use "../sass-utils/variables" as color;
 
 .category {
+  &__top-head {
+    &__wrapper {
+      width: 75% !important;
+      @media (max-width: 992px) {
+        width: 100% !important;
+      }
+    }
+  }
   &__filter-column {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: white;
     border: 1px solid #e9e4e4;
     padding: 1.5rem;
     border-radius: 5px;
+    @media (max-width: 992px) {
+      position: sticky;
+      top: 0 !important;
+      left: 0;
+      border: none;
+      box-shadow: none;
+    }
+
+    &__wrapper {
+      @media (max-width: 992px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 300px !important;
+        z-index: 10000;
+        background-color: white;
+        transform: translateX(-100%);
+        transition: cubic-bezier(0.78, -1.23, 0.19, 1.07) 750ms;
+        height: 300rem;
+
+        &[visibility="true"] {
+          box-shadow: 0 0 1000vh 1000vh rgba(0, 0, 0, 0.6);
+          transform: translateX(0);
+          transition: cubic-bezier(0, -1.07, 0, 1.53) 750ms;
+        }
+        @media (max-width: 768px) {
+          width: 350px !important;
+        }
+        @media (max-width: 360px) {
+          width: 100% !important;
+        }
+        &__remove-btn {
+          scale: 1.2;
+          border: transparent;
+          background-color: transparent;
+          padding: 1.5rem;
+        }
+      }
+    }
+  }
+  &__filter-btn {
+    font-size: 1.5rem;
+    @media (min-width: 992px) {
+      display: none !important;
+    }
+  }
+
+  &__sort {
+    &-btn {
+      background: color.$primary-color !important;
+      color: white !important;
+      @media (max-width: 992px) {
+        &::after {
+          display: none !important;
+        }
+      }
+    }
+
+    &-dropdown {
+      & > .dropdown-item:is(:hover, :focus) > * {
+        color: white !important;
+        border: none;
+      }
+    }
   }
 
   &__range-result {
@@ -25,11 +98,6 @@
   &__showMore {
     color: color.$primary-color;
     cursor: pointer;
-  }
-
-  &__sort-btn {
-    background: color.$primary-color !important;
-    color: white !important;
   }
 
   &__listing-grid {
