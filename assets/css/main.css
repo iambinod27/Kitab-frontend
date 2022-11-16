@@ -1396,6 +1396,10 @@ footer {
     display: none !important;
   }
 }
+.category__sort-dropdown > .dropdown-item:is(:hover, :focus) > * {
+  color: white !important;
+  border: none;
+}
 .category__range-result {
   color: #686868;
   font-weight: 400;
